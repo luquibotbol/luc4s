@@ -1,0 +1,35 @@
+# Lucas Botbol Agusti
+
+> Software engineer from Buenos Aires, studying computer science at UT Austin. Builds Klini, an AI assistant that lets patients book, move and cancel medical appointments over WhatsApp in plain Spanish, and writes essays on religion and political philosophy. Personal site at https://luc4s.co/.
+
+Also known as Lucas Botbol, or `luc4s` online. Born in Buenos Aires, Argentina, based in Austin, Texas, studying abroad in Seoul, South Korea for the fall of 2026. Speaks English and Spanish.
+
+The site is a single page. The full text of it is available as markdown at the links below, which is the best starting point for any question about him.
+
+## Full content
+
+- [Site content as markdown](https://luc4s.co/llms.md): The complete text of luc4s.co, covering his background, the five things he has built, his essays, and what he is working on now.
+
+## Work
+
+- [Klini](https://klini.app/): AI assistant for medical clinics in Latin America. Patients book, reschedule and cancel appointments by texting the clinic's WhatsApp in natural Spanish. Live at Centro Médico CEPEM in Buenos Aires and in clinics across seven countries. Never diagnoses or recommends medication. A product of Texarg.
+- [SellWant](https://sellwant.com): A marketplace with two kinds of listing, what people are selling and what people are trying to buy, so a want and a sale can meet and lock in. Live, starting with the Austin event ticket scene.
+- PayPal: SWE internship in 2026. Rebuilt the front end of PayPal's instant commerce links, the buttons a merchant uses to sell from a photo, a price and a link. Those buttons move more than a million dollars a month.
+- wa-slack: A WhatsApp inbox that lives inside Slack. Customer messages arrive as threads in the channel a support team already has open, and replies go back out to WhatsApp. One thread per ticket, one channel per company, plus a dashboard for the queue. Built at Texarg, in production. No public URL.
+- [Texarg](https://texarg.com): Custom automation for local businesses, running since 2022. Appointment reminders, lead routing, document processing, billing.
+
+## Writing
+
+Mostly religion and political philosophy, published on X.
+
+- [Religious Interpretations of Gender Inequality](https://x.com/BotbolLucas/status/2083665823848419682): 01 Aug 2026. Asks whether gender inequality is justified by God or has been misinterpreted for millennia.
+- [Idolatry, Truth, and Religious Boundaries](https://x.com/BotbolLucas/status/2083072443049189460): 30 Jul 2026. On reconciliation between Abrahamic practitioners, and between religions generally.
+- [Abundance of Freedom, Poverty of Property](https://x.com/BotbolLucas/status/2082199237874577746): 28 Jul 2026. On Locke's state of nature, and why freedom without property fails to let prosperity gain value.
+- [All essays](https://x.com/BotbolLucas/articles): The complete list on X.
+
+## Elsewhere
+
+- [X](https://x.com/BotbolLucas): @BotbolLucas
+- [LinkedIn](https://www.linkedin.com/in/lucasbotbolagusti/): lucasbotbolagusti
+- [Instagram](https://instagram.com/lucasbotbol): @lucasbotbol
+- Email: lucas@botbol.us

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Markdown version of this site, for agents and language models:
+# https://luc4s.co/llms.txt
+# https://luc4s.co/llms.md
+
+Sitemap: https://luc4s.co/sitemap.xml

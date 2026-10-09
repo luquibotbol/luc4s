@@ -1,0 +1,1971 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucas Botbol Agusti &middot; Software engineer in Austin</title>
+<meta name="description" content="Lucas Botbol Agusti, CS at UT Austin and the builder of Klini, an AI assistant that books and reschedules appointments for medical clinics in Latin America. Previously an SWE intern at PayPal.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0B0C0E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F7F8FA" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://luc4s.co/">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="text/markdown" href="https://luc4s.co/llms.md">
+<link rel="describedby" href="https://luc4s.co/llms.txt">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://luc4s.co/">
+<meta property="og:site_name" content="luc4s.co">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Lucas">
+<meta property="profile:last_name" content="Botbol Agusti">
+<meta property="profile:username" content="BotbolLucas">
+<meta property="og:title" content="Lucas Botbol Agusti">
+<meta property="og:description" content="CS at UT Austin, building Klini, an AI assistant that books and reschedules appointments for medical clinics in Latin America. Buenos Aires to Austin to Seoul.">
+<meta property="og:image" content="https://luc4s.co/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="A hand-drawn globe showing the flight from Buenos Aires to Austin, beside the luc4s wordmark.">
+<meta name="twitter:image" content="https://luc4s.co/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@BotbolLucas">
+<meta name="twitter:site" content="@BotbolLucas">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://luc4s.co/#person",
+      "name": "Lucas Botbol Agusti",
+      "alternateName": ["Lucas Botbol", "luc4s"],
+      "givenName": "Lucas",
+      "familyName": "Botbol Agusti",
+      "url": "https://luc4s.co/",
+      "email": "mailto:lucas@botbol.us",
+      "jobTitle": "Software engineer",
+      "description": "Software engineer from Buenos Aires, studying CS at UT Austin. Builds Klini, an AI assistant that books, reschedules and cancels appointments for medical clinics in Latin America, and writes essays on theology and political philosophy.",
+      "birthPlace": { "@type": "Place", "name": "Buenos Aires, Argentina" },
+      "homeLocation": { "@type": "Place", "name": "Austin, Texas" },
+      "nationality": { "@type": "Country", "name": "Argentina" },
+      "knowsLanguage": ["en", "es"],
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "The University of Texas at Austin",
+        "sameAs": "https://www.utexas.edu/"
+      },
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Texarg",
+          "url": "https://texarg.com"
+        },
+        {
+          "@type": "Organization",
+          "name": "SellWant",
+          "url": "https://sellwant.com"
+        }
+      ],
+      "knowsAbout": [
+        "Software engineering",
+        "Artificial intelligence",
+        "Conversational AI",
+        "Healthcare automation",
+        "Online marketplaces",
+        "SVG animation",
+        "Political philosophy",
+        "Theology"
+      ],
+      "sameAs": [
+        "https://x.com/BotbolLucas",
+        "https://www.linkedin.com/in/lucasbotbolagusti/",
+        "https://instagram.com/lucasbotbol"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luc4s.co/#website",
+      "url": "https://luc4s.co/",
+      "name": "Lucas Botbol Agusti",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://luc4s.co/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://luc4s.co/#profilepage",
+      "url": "https://luc4s.co/",
+      "name": "Lucas Botbol Agusti",
+      "isPartOf": { "@id": "https://luc4s.co/#website" },
+      "about": { "@id": "https://luc4s.co/#person" },
+      "mainEntity": { "@id": "https://luc4s.co/#person" }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#0B0C0E; --raise:#131519; --sunk:#0E1013;
+    --line:#22262C; --line-soft:#181C21;
+    --fg:#EAECEF; --mute:#868D96; --faint:#5B626B;
+    --accent:#78B4EA; --accent-dim:#2C4A66;
+    --ember:#E0762A;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --ink:#F7F8FA; --raise:#FFFFFF; --sunk:#F1F3F6;
+      --line:#DFE4EA; --line-soft:#E9EDF1;
+      --fg:#0B0C0E; --mute:#5C646D; --faint:#8A929B;
+      --accent:#1B6DB4; --accent-dim:#BCD6EE; --ember:#B8551A;
+    }
+  }
+  :root[data-theme="light"]{
+    --ink:#F7F8FA; --raise:#FFFFFF; --sunk:#F1F3F6; --line:#DFE4EA; --line-soft:#E9EDF1;
+    --fg:#0B0C0E; --mute:#5C646D; --faint:#8A929B;
+    --accent:#1B6DB4; --accent-dim:#BCD6EE; --ember:#B8551A;
+  }
+  :root{
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --gutter: 34px;              /* the wire lives here */
+    --pad: clamp(20px, 6vw, 44px);
+  }
+  @media (min-width:700px){ :root{ --gutter:56px; } }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+  body{
+    margin:0; background:var(--ink); color:var(--fg);
+    font-family:var(--sans); font-size:15.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  p{ margin:0; }
+  a{ color:inherit; text-decoration:none; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:4px; border-radius:2px; }
+
+  /* ============ the page shell ============ */
+  .page{ position:relative; max-width:660px; margin:0 auto; padding:0 var(--pad) 0; }
+  #wire{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; z-index:0; }
+  #wire .line{ fill:none; stroke:var(--accent); stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+  #wire .node{ fill:var(--ink); stroke:var(--accent); stroke-width:1.5; }
+  .block{ position:relative; z-index:1; padding-left:var(--gutter); }
+
+  /* ============ hero ============ */
+  /* top/bottom only, the padding shorthand here would cancel .block's gutter indent */
+  .hero{ padding-top:clamp(30px,9vw,60px); padding-bottom:clamp(34px,9vw,56px); display:flex; flex-direction:column; gap:20px; }
+  .globe-slot{ position:relative; width:100%; max-width:270px; }
+  #globe{
+    display:block; width:100%; height:auto; overflow:visible;
+    cursor:grab; user-select:none; -webkit-user-select:none;
+    touch-action:none;                 /* fine pointers: full two-axis drag */
+  }
+  @media (pointer:coarse){
+    /* on touch the page must still scroll, so the globe takes horizontal drags only */
+    #globe{ touch-action:pan-y; }
+  }
+  .globe-slot.grabbing #globe{ cursor:grabbing; }
+  #globe .visited{ fill:var(--accent); opacity:.5; }
+  #globe .trail-past{ fill:none; stroke:var(--fg); stroke-width:1.4; opacity:.34; stroke-linecap:round; stroke-linejoin:round; }
+
+  /* hint and destination share one slot: hint fades out as the first flight fades in */
+  .globe-status{ position:relative; min-height:15px; margin-top:10px; }
+  #globe-hint, #dest{
+    position:absolute; inset:0; margin:0;
+    font-family:var(--mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+    white-space:nowrap; transition:opacity .45s ease;
+  }
+  #globe-hint{ color:var(--faint); }
+  #globe-hint.gone{ opacity:0; pointer-events:none; }
+  #dest{ color:var(--fg); opacity:0; pointer-events:none; }
+  #dest.on{ opacity:1; }
+  #dest .arrow{ color:var(--accent); }
+  #dest .dim{ color:var(--faint); }
+  .globe-ctl{ display:flex; gap:6px; margin-top:12px; }
+  .globe-ctl button{
+    font-family:var(--mono); font-size:9.5px; letter-spacing:.11em; text-transform:uppercase;
+    background:transparent; color:var(--faint); border:1px solid var(--line);
+    border-radius:999px; padding:6px 11px; cursor:pointer; min-height:30px;
+  }
+  .globe-ctl button:hover{ color:var(--fg); border-color:var(--accent-dim); }
+  .globe-ctl button:active{ color:var(--accent); }
+  #globe .grat{ fill:none; stroke:var(--accent); stroke-width:.75; opacity:.2; stroke-linecap:round; }
+  #globe .limb{ fill:none; stroke:var(--accent); stroke-width:.9; opacity:.4; stroke-linecap:round; }
+  #globe .limb2{ fill:none; stroke:var(--accent); stroke-width:.7; opacity:.2; stroke-linecap:round; }
+  #globe .coast{ fill:none; stroke:var(--accent); stroke-width:1.35; opacity:.85; stroke-linecap:round; stroke-linejoin:round; }
+  #globe .coast-ghost{ fill:none; stroke:var(--accent); stroke-width:1.1; opacity:.26; stroke-linecap:round; stroke-linejoin:round; }
+  #globe .track{ fill:none; stroke:var(--accent); stroke-width:.85; opacity:.28; stroke-dasharray:1.5 4; stroke-linecap:round; }
+  #globe .trail{ fill:none; stroke:var(--fg); stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+  #globe .pin{ fill:none; stroke:var(--fg); stroke-width:1.2; opacity:.7; }
+  #globe .pin-live{ fill:var(--fg); stroke:var(--fg); opacity:1; }
+  #globe .plane{ fill:var(--fg); }
+  #globe .city{ font-family:var(--mono); font-size:7.5px; letter-spacing:.15em; fill:var(--fg); }
+  #globe .city-sub{ font-family:var(--mono); font-size:6.5px; letter-spacing:.12em; fill:var(--mute); }
+
+  .markline{
+    align-self:flex-start; margin:0; font-weight:inherit;
+    display:flex; flex-direction:column; align-items:flex-start;
+  }
+  /* the underline hangs off the wordmark, so it anchors here and not on the h1,
+     which is now taller than the mark itself */
+  .markline .wordmark{ position:relative; }
+  .markline .realname{
+    margin-top:28px; font-family:var(--mono); font-size:11.5px; font-weight:400;
+    letter-spacing:.2em; text-transform:uppercase; color:var(--mute); white-space:nowrap;
+  }
+  @media (max-width:360px){ .markline .realname{ font-size:10.5px; letter-spacing:.16em; } }
+  .markline .name{
+    font-family:var(--mono); font-size:clamp(38px,12vw,60px); font-weight:500;
+    letter-spacing:-.055em; line-height:1; display:block;
+  }
+  .markline .name .four{ color:var(--accent); }
+  .markline .ul{ position:absolute; left:-3%; bottom:-16px; width:108%; height:22px; overflow:visible; }
+  .markline .ul path{ fill:none; stroke:var(--accent); stroke-width:2.4; stroke-linecap:round; }
+
+  .bio{ font-size:clamp(15px,4vw,17px); line-height:1.6; color:var(--mute); max-width:40ch; padding-top:10px; }
+  .bio b{ color:var(--fg); font-weight:500; }
+
+  /* ============ section furniture ============ */
+  section{ padding-top:clamp(38px,9vw,58px); padding-bottom:clamp(38px,9vw,58px); }
+  .hd{ position:relative; display:inline-block; margin-bottom:22px; }
+  .hd h2{
+    margin:0; font-family:var(--mono); font-size:12px; font-weight:500;
+    letter-spacing:.2em; text-transform:uppercase; color:var(--fg);
+  }
+  .hd .rule{ position:absolute; left:-2px; bottom:-9px; width:calc(100% + 8px); height:12px; overflow:visible; }
+  .hd .rule path{ fill:none; stroke:var(--accent); stroke-width:1.6; stroke-linecap:round; opacity:.9; }
+
+  /* ============ built ============ */
+  .rows{ display:flex; flex-direction:column; }
+  .row{ padding:16px 0; border-top:1px solid var(--line-soft); position:relative; }
+  .row:first-child{ border-top:0; padding-top:0; }
+  .row-head{ display:flex; align-items:baseline; gap:12px; }
+  .row-name{ position:relative; font-family:var(--mono); font-size:17px; letter-spacing:-.02em; color:var(--fg); }
+  .row-name .scratch{ position:absolute; left:-4%; bottom:-7px; width:108%; height:10px; overflow:visible; }
+  .row-name .scratch path{
+    fill:none; stroke:var(--accent); stroke-width:1.8; stroke-linecap:round;
+    stroke-dasharray:var(--l); stroke-dashoffset:var(--l);
+    transition:stroke-dashoffset .5s cubic-bezier(.62,0,.35,1);
+  }
+  .row-head:hover .row-name .scratch path,
+  .row-head:focus-visible .row-name .scratch path{ stroke-dashoffset:0; }
+  .row-meta{ margin-left:auto; font-family:var(--mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint); white-space:nowrap; }
+  .row-desc{ display:block; padding-top:7px; font-size:14.5px; line-height:1.6; color:var(--mute); max-width:52ch; }
+
+  /* ---- SellWant's own wordmark, ported from the app ---- */
+  .sw-name{ display:inline-flex; align-items:center; }
+  .sw-mark{
+    display:block; height:17px; width:auto; overflow:visible;
+    --sw-sell:#EF4444; --sw-want:#4ADE80;   /* the app's brand pair, on dark */
+  }
+  /* #4ADE80 on the light background is barely a colour, so light mode takes the
+     darker step of each hue, the same accommodation the Klini mark makes */
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]) .sw-mark{ --sw-sell:#DC2626; --sw-want:#16A34A; }
+  }
+  :root[data-theme="light"] .sw-mark{ --sw-sell:#DC2626; --sw-want:#16A34A; }
+  .sw-g-sell path{ fill:var(--sw-sell); }
+  .sw-g-want path{ fill:var(--sw-want); }
+
+  /* Sell is written downward, Want upward, the two sides of the trade arriving
+     from opposite directions. Armed by JS, so without it the mark just sits
+     there finished rather than clipped to nothing. */
+  @keyframes sw-wipe{ to{ transform:scaleY(1); } }
+  @keyframes sw-settle{ to{ transform:translateY(0); opacity:1; } }
+  .sw-mark.sw-armed .sw-r{ transform-box:fill-box; transform:scaleY(0); }
+  .sw-mark.sw-armed .sw-r-sell{ transform-origin:top; }
+  .sw-mark.sw-armed .sw-r-want{ transform-origin:bottom; }
+  .sw-mark.sw-armed .sw-g-sell{ transform:translateY(-140px); opacity:.6; }
+  .sw-mark.sw-armed .sw-g-want{ transform:translateY(140px); opacity:.6; }
+  .sw-mark.sw-armed.sw-play .sw-r-sell{ animation:sw-wipe 920ms cubic-bezier(.5,0,.2,1) forwards; }
+  .sw-mark.sw-armed.sw-play .sw-r-want{ animation:sw-wipe 920ms cubic-bezier(.5,0,.2,1) 600ms forwards; }
+  .sw-mark.sw-armed.sw-play .sw-g-sell{ animation:sw-settle 920ms cubic-bezier(.3,1.1,.4,1) forwards; }
+  .sw-mark.sw-armed.sw-play .sw-g-want{ animation:sw-settle 920ms cubic-bezier(.3,1.1,.4,1) 600ms forwards; }
+  @media (prefers-reduced-motion: reduce){
+    .sw-mark .sw-r{ transform:scaleY(1) !important; animation:none !important; }
+    .sw-mark .sw-g{ transform:none !important; opacity:1 !important; animation:none !important; }
+  }
+
+  /* ---- SellWant: a want and a sale closing on each other ---- */
+  .swap{ margin-top:14px; }
+  .swap-track{
+    display:flex; align-items:stretch; gap:10px; max-width:340px;
+    transition:gap .55s cubic-bezier(.62,0,.35,1);
+  }
+  .swap.locked .swap-track{ gap:0; }
+  .swap-card{
+    flex:1 1 0; min-width:0; display:flex; flex-direction:column; gap:3px;
+    border:1px solid var(--line); border-radius:9px; background:var(--raise);
+    padding:8px 10px; transition:border-color .4s ease, background .4s ease;
+  }
+  .swap-card b{
+    font-family:var(--mono); font-size:8.5px; letter-spacing:.14em; text-transform:uppercase;
+    font-weight:500; color:var(--faint); transition:color .4s ease;
+  }
+  .swap-card.want b{ color:var(--ember); }
+  .swap-card .swap-it{ font-size:12px; line-height:1.3; color:var(--fg); }
+  .swap-card .swap-px{ font-family:var(--mono); font-size:12.5px; color:var(--mute); font-variant-numeric:tabular-nums; }
+  .swap.locked .swap-card{ border-color:var(--accent-dim); background:var(--sunk); }
+  .swap.locked .swap-card .swap-px{ color:var(--accent); }
+  /* the two cards fuse into one slab, so the seam between them is squared off */
+  .swap.locked .swap-card.want{ border-top-right-radius:0; border-bottom-right-radius:0; border-right-width:0; }
+  .swap.locked .swap-card.sale{ border-top-left-radius:0; border-bottom-left-radius:0; }
+  .swap-out{
+    min-height:14px; margin-top:8px; font-family:var(--mono); font-size:9.5px;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--accent);
+    opacity:0; transition:opacity .35s ease;
+  }
+  .swap.locked .swap-out{ opacity:1; }
+  #swap-btn, #relay-btn{
+    margin-top:9px; font-family:var(--mono); font-size:9.5px; letter-spacing:.11em; text-transform:uppercase;
+    background:transparent; color:var(--faint); border:1px solid var(--line);
+    border-radius:999px; padding:6px 11px; cursor:pointer; min-height:30px; position:relative;
+  }
+  #swap-btn::after, #relay-btn::after{ content:""; position:absolute; inset:-8px; }
+  #swap-btn:hover, #relay-btn:hover{ color:var(--fg); border-color:var(--accent-dim); }
+
+  /* ---- wa-slack: the same message, seen from both tools ---- */
+  .relay{ margin-top:14px; }
+  .relay-panes{ display:flex; gap:8px; max-width:360px; }
+  .relay-pane{
+    flex:1 1 0; min-width:0; border:1px solid var(--line-soft); border-radius:9px;
+    background:var(--sunk); padding:7px 8px 8px;
+  }
+  .relay-hd{
+    display:block; font-family:var(--mono); font-size:8px; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--faint); margin-bottom:6px;
+  }
+  .relay-log{ display:flex; flex-direction:column; gap:4px; min-height:74px; }
+  .relay-msg{
+    font-size:10.5px; line-height:1.35; padding:5px 7px; border-radius:7px;
+    background:var(--raise); border:1px solid var(--line-soft); color:var(--fg);
+    animation:relay-in .34s cubic-bezier(.4,0,.2,1) both;
+  }
+  .relay-msg.them{ color:var(--mute); }
+  .relay-msg .who{
+    display:block; font-family:var(--mono); font-size:7.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--faint); margin-bottom:2px;
+  }
+  .relay-msg.tag{
+    background:transparent; border-style:dashed; border-color:var(--accent-dim);
+    color:var(--accent); font-family:var(--mono); font-size:8px;
+    letter-spacing:.13em; text-transform:uppercase;
+  }
+  /* each pane slides its messages in from the tool they arrived from */
+  @keyframes relay-in{ from{ opacity:0; transform:translateX(-6px); } to{ opacity:1; transform:none; } }
+  .relay-pane:last-child .relay-msg{ animation-name:relay-in-r; }
+  @keyframes relay-in-r{ from{ opacity:0; transform:translateX(6px); } to{ opacity:1; transform:none; } }
+  @media (max-width:359px){
+    .relay-msg{ font-size:10px; }
+    .relay-pane{ padding:6px 6px 7px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .swap-track, .swap-card, .swap-out{ transition:none; }
+    .relay-msg{ animation:none; }
+  }
+
+  /* ============ writing ============ */
+  .posts{ display:flex; flex-direction:column; }
+  .post{
+    display:flex; align-items:baseline; gap:10px 14px; flex-wrap:wrap; padding:11px 0;
+    border-top:1px solid var(--line-soft); color:var(--mute);
+  }
+  .post:first-child{ border-top:0; padding-top:0; }
+  .post .t{ color:var(--fg); font-size:14.5px; line-height:1.45; flex:1 1 auto; min-width:0; }
+  .post .t:hover{ color:var(--accent); }
+  .post .d{ font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; color:var(--faint); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  /* small chips keep their 28px look but claim a 44px tap area underneath */
+  .q-btn, #copy-mail{ position:relative; }
+  .q-btn::after, #copy-mail::after{ content:""; position:absolute; inset:-9px; }
+  .q-btn{
+    flex:none; width:28px; height:28px; border-radius:50%; cursor:pointer;
+    background:transparent; border:1px solid var(--line); color:var(--faint);
+    font-family:Georgia, "Times New Roman", serif; font-size:16px; line-height:1;
+    padding:0 0 5px; display:flex; align-items:center; justify-content:center;
+    transition:color .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .q-btn:hover{ color:var(--accent); border-color:var(--accent-dim); }
+  .q-btn[aria-expanded="true"]{ color:var(--accent); border-color:var(--accent-dim); transform:rotate(180deg); }
+  .pull{
+    flex:1 0 100%; margin:0; display:grid; grid-template-rows:0fr;
+    transition:grid-template-rows .38s cubic-bezier(.4,0,.2,1), opacity .3s ease;
+    opacity:0;
+  }
+  .pull.open{ grid-template-rows:1fr; opacity:1; }
+  .pull > *{ min-height:0; }
+  .pull p{
+    overflow:hidden; padding-left:14px; padding-top:2px;
+    font-size:14px; line-height:1.6; color:var(--mute); font-style:italic; max-width:52ch;
+  }
+  .pull .brk{
+    position:absolute; width:6px; height:100%; overflow:visible;
+    left:0; top:0; opacity:0; transition:opacity .3s ease .1s;
+  }
+  .pull.open .brk{ opacity:1; }
+  .pull .brk path{ fill:none; stroke:var(--accent); stroke-width:1.4; stroke-linecap:round; }
+  .pull{ position:relative; }
+  .row-note{ display:block; padding-top:14px; font-size:12.5px; line-height:1.55; color:var(--faint); max-width:52ch; }
+
+  /* ---- Klini's own wordmark, drawn by Lucas ---- */
+  .klini-name{ display:inline-flex; align-items:center; }
+  /* inline-block with no line-height so the box hugs the wordmark exactly,
+     otherwise the hover target picks up stray leading above and below */
+  .klini-mark{ display:inline-block; line-height:0; }
+
+  /* Texarg's mark sits to the left of the name. The scratch underline is
+     positioned against .row-name, so the logo is inside it and the wordmark
+     shifts right by exactly the mark's width plus its gap. */
+  .tx-name{ display:inline-flex; align-items:center; gap:9px; }
+  .tx-logo{ height:24px; width:auto; display:block; flex:none; }
+
+  /* PayPal's wordmark: their two blues, their slant. The navy is lifted on a
+     dark ground for the same reason Klini's teal is, and the two halves part
+     slightly on hover, echoing the gap in their overlapping double-P mark. */
+  .pp-mark{
+    --pp-a:#5B9BE0; --pp-b:#00A5E0;
+    display:inline-flex; font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-style:italic; font-weight:700; font-size:21px; letter-spacing:-.035em;
+    line-height:1; cursor:default; user-select:none;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]) .pp-mark{ --pp-a:#003087; --pp-b:#009CDE; }
+  }
+  :root[data-theme="light"] .pp-mark{ --pp-a:#003087; --pp-b:#009CDE; }
+  .pp-mark i{ font-style:italic; transition:transform .4s cubic-bezier(.22,1,.36,1); }
+  .pp-a{ color:var(--pp-a); }
+  .pp-b{ color:var(--pp-b); }
+  .pp-mark.parted .pp-a{ transform:translateX(-2.5px); }
+  .pp-mark.parted .pp-b{ transform:translateX(2.5px); }
+  .pp-mark{ cursor:pointer; }
+  @media (prefers-reduced-motion: reduce){ .pp-mark i{ transition:none; } }
+
+  /* Clicking the wordmark drops a co-founder in upside down from the top left.
+     He hangs there a few seconds and retracts. Fixed, inert, never in the way.
+     translateY is listed before rotate on purpose: transforms compose left to
+     right, so the slide happens in normal page space and only then flips. Put
+     rotate first and -102% would send him downwards instead. */
+  .egg{
+    position:fixed; top:0; left:3vw; z-index:60; pointer-events:none;
+    height:min(40vh, 300px); width:auto;
+    transform:translateY(-102%) rotate(180deg);
+    transition:transform .6s cubic-bezier(.34,1.35,.64,1);
+    filter:drop-shadow(0 14px 30px rgba(0,0,0,.55));
+  }
+  .egg.in{ transform:translateY(0) rotate(180deg); }
+  @media (prefers-reduced-motion: reduce){
+    .egg{ transform:translateY(0) rotate(180deg); opacity:0; transition:opacity .2s ease; }
+    .egg.in{ opacity:1; }
+  }
+  .klini-wordmark{
+    --klini-h: 32px;
+    /* the brand teal is built for paper; on near-black it disappears, so the
+       dark theme gets a lifted version and light mode keeps the original */
+    --klini-teal: #3FA99E;
+    --klini-green: #34D06A;
+    --klini-ease: cubic-bezier(.45,.05,.25,1);
+    --klini-pop: cubic-bezier(.34,1.56,.64,1);
+    height: var(--klini-h); width:auto; display:block; overflow:visible;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]) .klini-wordmark{ --klini-teal:#0F6B62; --klini-green:#22C55E; }
+  }
+  :root[data-theme="light"] .klini-wordmark{ --klini-teal:#0F6B62; --klini-green:#22C55E; }
+
+  .klini-wordmark .kl-s{
+    fill:none; stroke:var(--klini-teal); stroke-linecap:round; stroke-linejoin:round;
+    stroke-width:82; stroke-dashoffset:var(--len); stroke-dasharray:var(--len);
+    animation: kl-draw var(--dur) var(--klini-ease) var(--at) forwards;
+  }
+  .klini-wordmark .kl-dot{
+    stroke:none; transform:scale(0); transform-box:fill-box; transform-origin:center;
+    animation: kl-pop var(--dur) var(--klini-pop) var(--at) forwards;
+  }
+  @keyframes kl-draw{ to{ stroke-dashoffset:0; } }
+  @keyframes kl-pop { to{ transform:scale(1); } }
+
+  .klini-wordmark .kl-k-stem { --len:326; --at:0ms;    --dur:420ms; }
+  .klini-wordmark .kl-k-arm  { --len:132; --at:320ms;  --dur:300ms; stroke-width:71; }
+  .klini-wordmark .kl-k-leg  { --len:106; --at:520ms;  --dur:280ms; stroke-width:75; }
+  .klini-wordmark .kl-l-stem { --len:329; --at:720ms;  --dur:400ms; }
+  .klini-wordmark .kl-i1-stem{ --len:214; --at:980ms;  --dur:300ms; }
+  .klini-wordmark .kl-n-stem { --len:239; --at:1220ms; --dur:340ms; stroke-width:80; }
+  .klini-wordmark .kl-n-arch { --len:307; --at:1460ms; --dur:460ms; }
+  .klini-wordmark .kl-i2-stem{ --len:213; --at:1820ms; --dur:300ms; }
+  .klini-wordmark .kl-i1-dot { --at:1160ms; --dur:260ms; fill:var(--klini-teal); }
+  .klini-wordmark .kl-k-dot  { --at:2080ms; --dur:340ms; fill:var(--klini-green); }
+  .klini-wordmark .kl-i2-dot { --at:2190ms; --dur:360ms; fill:var(--klini-green); }
+
+  @media (prefers-reduced-motion: reduce){
+    .klini-wordmark .kl-s  { stroke-dashoffset:0; animation:none; }
+    .klini-wordmark .kl-dot{ transform:scale(1);  animation:none; }
+  }
+
+  /* Klini's row shows the product working instead of describing it working */
+  .chat{ margin-top:14px; max-width:330px; }
+  .bubbles{ display:flex; flex-direction:column; gap:7px; }
+  /* Every bubble is in the DOM from the start at opacity 0, so the block owns its
+     final height immediately and nothing below it ever shifts. The typing dots sit
+     inside the pending bubble rather than replacing it, for the same reason. */
+  .bub{
+    position:relative;
+    max-width:86%; padding:8px 11px; border-radius:11px; font-size:13px; line-height:1.45;
+    border:1px solid var(--line); background:var(--raise); color:var(--fg);
+    opacity:0; transform:translateY(5px);
+    transition:opacity .3s ease, transform .3s cubic-bezier(.22,1,.36,1);
+  }
+  .bub.in{ opacity:1; transform:none; }
+  .bub.them{ align-self:flex-start; border-bottom-left-radius:3px; color:var(--mute); }
+  .bub.us{ align-self:flex-end; border-bottom-right-radius:3px; border-color:var(--accent-dim); }
+  .bub .txt{ transition:opacity .25s ease; }
+  .bub.pending .txt{ opacity:0; }
+  .bub .dots{
+    position:absolute; left:12px; top:50%; transform:translateY(-50%);
+    display:flex; gap:4px; opacity:0; transition:opacity .2s ease; pointer-events:none;
+  }
+  .bub.pending .dots{ opacity:1; }
+  .bub .dots i{
+    width:4px; height:4px; border-radius:50%; background:var(--faint); display:block;
+    animation:blip 1.1s infinite ease-in-out;
+  }
+  .bub .dots i:nth-child(2){ animation-delay:.18s; }
+  .bub .dots i:nth-child(3){ animation-delay:.36s; }
+  @keyframes blip{ 0%,60%,100%{ opacity:.25; transform:translateY(0); } 30%{ opacity:1; transform:translateY(-2px); } }
+  /* the closing chip: the appointment actually moved, so the demo ends on a
+     changed state rather than on a promise to pass it to somebody */
+  .bub.done{
+    align-self:stretch; max-width:100%; background:transparent; border:0; border-top:1px dashed var(--line);
+    border-radius:0; padding:9px 0 0; color:var(--accent);
+    font-family:var(--mono); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
+  }
+  #chat-btn{
+    position:relative; margin-top:11px;
+    font-family:var(--mono); font-size:9.5px; letter-spacing:.11em; text-transform:uppercase;
+    background:transparent; color:var(--faint); border:1px solid var(--line);
+    border-radius:999px; padding:6px 11px; cursor:pointer; min-height:30px;
+  }
+  #chat-btn::after{ content:""; position:absolute; inset:-8px; }
+  #chat-btn:hover{ color:var(--fg); border-color:var(--accent-dim); }
+
+  /* Texarg's row runs the thing it describes, instead of describing it twice */
+  .flow{ margin-top:14px; }
+  #flow-svg{ display:block; width:100%; max-width:320px; height:auto; overflow:visible; }
+  #flow-svg .wire2{ fill:none; stroke:var(--accent); stroke-width:1.1; opacity:.35; stroke-linecap:round; }
+  #flow-svg .stop{ fill:var(--ink); stroke:var(--accent); stroke-width:1.3; opacity:.55; }
+  #flow-svg .stop.hot{ fill:var(--accent); opacity:1; }
+  #flow-svg .pip{ fill:var(--fg); }
+  #flow-svg .cap{ font-family:var(--mono); font-size:6px; letter-spacing:.11em; fill:var(--faint); text-transform:uppercase; }
+  #flow-svg .cap.hot{ fill:var(--fg); }
+  #flow-btn{
+    margin-top:9px; font-family:var(--mono); font-size:9.5px; letter-spacing:.11em; text-transform:uppercase;
+    background:transparent; color:var(--faint); border:1px solid var(--line);
+    border-radius:999px; padding:6px 11px; cursor:pointer; min-height:30px;
+  }
+  #flow-btn:hover{ color:var(--fg); border-color:var(--accent-dim); }
+
+  /* the one handwritten voice on the page, it should look written, not set */
+  .sub{
+    font-family:"Snell Roundhand","Apple Chancery","Segoe Script","Bradley Hand","Brush Script MT",cursive;
+    font-size:clamp(18px,4.8vw,21px); line-height:1.45; color:var(--mute);
+    max-width:30ch; margin-bottom:20px; margin-top:-4px;
+  }
+  /* armed from JS so a failed script leaves the line readable, never clipped away.
+     The vertical insets go negative because script faces throw ascenders and
+     descenders well past the line box, and a flat 0 would shave them off. */
+  .sub.armed{ clip-path:inset(-12% 100% -12% 0); }
+  .sub.armed.written{
+    clip-path:inset(-12% -6% -12% 0);
+    transition:clip-path 1.25s cubic-bezier(.55,0,.3,1);
+  }
+  @media (prefers-reduced-motion: reduce){
+    .sub.armed, .sub.armed.written{ clip-path:none; transition:none; }
+  }
+  .more{ display:block; padding-top:14px; font-family:var(--mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint); }
+  .more:hover{ color:var(--accent); }
+
+  /* ============ now ============ */
+  .now-date{ font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:12px; }
+  .now-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px; }
+  .now-list li{ position:relative; padding-left:19px; font-size:14.5px; line-height:1.6; color:var(--mute); max-width:52ch; }
+  .now-list li::before{
+    content:""; position:absolute; left:2px; top:9px; width:6px; height:6px;
+    border:1.4px solid var(--accent); border-radius:50%;
+  }
+  .now-list li b{ color:var(--fg); font-weight:500; }
+
+  /* ============ elsewhere ============ */
+  .links{ display:flex; flex-direction:column; }
+  .link{
+    display:flex; align-items:baseline; gap:14px; padding:11px 0;
+    border-top:1px solid var(--line-soft);
+  }
+  .link:first-child{ border-top:0; padding-top:0; }
+  .link .k{ font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); width:82px; flex:none; }
+  .link .v{ font-size:14.5px; color:var(--fg); }
+  .link:hover .v{ color:var(--accent); }
+  #copy-mail{
+    margin-left:auto; font-family:var(--mono); font-size:9px; letter-spacing:.11em; text-transform:uppercase;
+    background:transparent; color:var(--faint); border:1px solid var(--line);
+    border-radius:999px; padding:5px 10px; cursor:pointer; min-height:28px;
+  }
+  #copy-mail:hover{ color:var(--fg); border-color:var(--accent-dim); }
+  #copy-mail.done{ color:var(--accent); border-color:var(--accent-dim); }
+
+  /* wire nodes are the navigation, the line is the menu */
+  #wire{ pointer-events:none; }
+  #wire .hit{ fill:transparent; pointer-events:auto; cursor:pointer; }
+  #wire .node{ transition:transform .28s cubic-bezier(.22,1,.36,1), r .2s ease; }
+  #wire .node.near{ fill:var(--accent); }
+  #wire .wire-plane path{ fill:var(--fg); }
+  #flow-btn::after{ content:""; position:absolute; inset:-8px; }
+  #flow-btn{ position:relative; }
+  #wire .nlabel{
+    font-family:var(--mono); font-size:9px; letter-spacing:.15em; text-transform:uppercase;
+    fill:var(--faint); opacity:0; transition:opacity .22s ease;
+  }
+  #wire .hit:hover + .nlabel, #wire .hit:focus-visible + .nlabel{ opacity:1; }
+
+  /* ============ footer ============ */
+  footer{
+    padding-top:34px; padding-bottom:46px; margin-top:8px;
+    display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline;
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint);
+    border-top:1px solid var(--line-soft);
+  }
+  footer b{ color:var(--mute); font-weight:500; font-variant-numeric:tabular-nums; }
+
+  /* ============ placeholder marker ============ */
+  [data-fake]{ border-bottom:1px dashed var(--ember); }
+
+  /* The Now placeholder's rule sat tight under its text with a big empty gap
+     below it, so it read as a stray line rather than a divider. Drawn from a
+     pseudo-element instead: absolutely positioned, so dropping it costs no
+     layout, padding would have pushed the Elsewhere node down by the same
+     amount and the two could never meet. JS sets --fake-drop to land it exactly
+     on that node. All of this disappears with the placeholder. */
+  .now-list li[data-fake]{ position:relative; border-bottom:0; }
+  .now-list li[data-fake]::after{
+    content:""; position:absolute; left:0; right:0;
+    top:calc(100% + var(--fake-drop, 0px));
+    border-bottom:1px dashed var(--ember);
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg id="wire" aria-hidden="true"></svg>
+
+  <!-- ============================= HERO ============================= -->
+  <header class="hero block" data-anchor>
+    <div class="globe-slot">
+      <svg id="globe" viewBox="0 0 290 250" role="img"
+           aria-label="A hand-drawn globe you can spin. Double-click anywhere to fly the plane there."></svg>
+      <div class="globe-status">
+        <p id="globe-hint">Drag to spin &middot; double-click to fly</p>
+        <p id="dest"></p>
+      </div>
+      <div class="globe-ctl">
+        <button id="fly-home" type="button">Fly home</button>
+        <button id="clear-log" type="button">Clear log</button>
+      </div>
+    </div>
+    <h1 class="markline">
+      <span class="wordmark">
+        <span class="name" aria-hidden="true">luc<span class="four">4</span>s</span>
+        <svg class="ul" viewBox="0 0 300 22" preserveAspectRatio="none" aria-hidden="true">
+          <path id="ul" d="M5 13 C 58 4, 126 4, 188 10 C 230 14, 266 17, 295 8" />
+        </svg>
+      </span>
+      <span class="realname">Lucas Botbol Agusti</span>
+    </h1>
+    <p class="bio">Born in Buenos Aires, building in Austin, <b>Seoul this fall</b>. CS at <b>UT&nbsp;Austin</b>, previously an SWE intern at <b>PayPal</b>, growing <b>Texas&nbsp;Blockchain</b>. I build software that takes tedious work off people's hands, and write essays about everything else.</p>
+  </header>
+
+  <!-- ============================= BUILT ============================= -->
+  <section class="block" data-anchor>
+    <span class="hd">
+      <h2>Built</h2>
+      <svg class="rule" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 C 26 3, 62 3, 88 6 C 100 7.5, 110 8.5, 118 5" /></svg>
+    </span>
+    <div class="rows">
+      <div class="row">
+        <a class="row-head" href="https://klini.app/">
+          <span class="row-name klini-name">
+            <span class="klini-mark" id="klini-mark">
+              <svg class="klini-wordmark" viewBox="92 404 1064 418" role="img" aria-label="Klini">
+                <defs>
+                  <clipPath id="klBase"><rect x="0" y="0" width="1240" height="803"/></clipPath>
+                  <clipPath id="klArm"><rect x="0" y="535" width="1240" height="268"/></clipPath>
+                </defs>
+                <g clip-path="url(#klBase)">
+                  <path class="kl-s kl-k-stem"  d="M 255 467 Q 208 622 159 778"/>
+                  <path class="kl-s kl-k-leg"   d="M 293 714 L 370 786"/>
+                  <path class="kl-s kl-l-stem"  d="M 567 464 Q 517 621 471 778"/>
+                  <path class="kl-s kl-i1-stem" d="M 678 574 Q 646 676 614 778"/>
+                  <circle class="kl-dot kl-i1-dot" cx="708" cy="477" r="37"/>
+                  <path class="kl-s kl-n-stem"  d="M 822 552 L 747 778"/>
+                  <path class="kl-s kl-n-arch"  d="M 806 612 C 822 594 848 586 874 590 C 908 595 934 610 938 645 L 895 778"/>
+                  <path class="kl-s kl-i2-stem" d="M 1081 574 Q 1052 676 1020 778"/>
+                  <circle class="kl-dot kl-k-dot"  cx="366" cy="676" r="24"/>
+                  <circle class="kl-dot kl-i2-dot" cx="1100" cy="476" r="36"/>
+                </g>
+                <g clip-path="url(#klArm)">
+                  <path class="kl-s kl-k-arm" d="M 396 550 L 297 636"/>
+                </g>
+              </svg>
+            </span>
+            <svg class="scratch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 22 2, 58 2, 78 5 C 86 6, 93 7, 98 4"/></svg>
+          </span>
+          <span class="row-meta">2026 &middot; In production</span>
+        </a>
+        <p class="row-desc">Patients book, move and cancel their own appointments by texting the clinic's WhatsApp in plain Spanish. No menus, no phone tree.</p>
+
+        <div class="chat" id="chat" role="group" aria-label="A sample WhatsApp conversation with Klini">
+          <div class="bubbles" id="bubbles"></div>
+          <button id="chat-btn" type="button">Replay</button>
+        </div>
+
+        <p class="row-note">Live at Centro M&eacute;dico CEPEM in Buenos Aires and in clinics across seven countries. It never diagnoses or recommends medication. Writing to a real clinic's calendar is the part that took a summer.</p>
+      </div>
+
+      <div class="row">
+        <a class="row-head" href="https://sellwant.com">
+          <span class="row-name sw-name"><svg class="sw-mark" id="sw-mark" viewBox="52 0 4323 742" role="img" aria-label="SellWant"><defs><clipPath id="sw-cs"><rect class="sw-r sw-r-sell" x="52" y="0" width="4323" height="742"/></clipPath><clipPath id="sw-cw"><rect class="sw-r sw-r-want" x="52" y="0" width="4323" height="742"/></clipPath></defs><g class="sw-g sw-g-sell" clip-path="url(#sw-cs)"><g transform="translate(0 726) scale(1 -1)"><path d="M355 -16Q263 -16 197.0 15.0Q131 46 94.0 102.0Q57 158 52 234L205 241Q211 199 229.5 169.5Q248 140 279.5 125.0Q311 110 357 110Q395 110 421.5 119.0Q448 128 462.0 146.5Q476 165 476 192Q476 217 464.0 235.5Q452 254 418.0 269.5Q384 285 318 300Q227 321 171.5 347.0Q116 373 91.0 412.5Q66 452 66 512Q66 576 97.5 624.0Q129 672 189.0 699.0Q249 726 332 726Q420 726 481.0 695.0Q542 664 576.5 610.0Q611 556 618 486L466 478Q463 515 446.0 542.5Q429 570 400.0 585.0Q371 600 330 600Q278 600 248.5 577.0Q219 554 219 517Q219 491 232.5 473.5Q246 456 277.5 443.0Q309 430 367 418Q466 398 523.5 367.5Q581 337 605.0 295.0Q629 253 629 199Q629 133 595.5 84.5Q562 36 500.5 10.0Q439 -16 355 -16ZM963.0 -12Q881.0 -12 820.5 22.5Q760.0 57 726.5 120.0Q693.0 183 693.0 268Q693.0 353 726.5 415.5Q760.0 478 820.0 513.0Q880.0 548 962.0 548Q1042.0 548 1101.0 513.0Q1160.0 478 1192.5 413.0Q1225.0 348 1225.0 258V228H848.0Q851.0 164 882.5 133.0Q914.0 102 966.0 102Q1004.0 102 1029.5 118.0Q1055.0 134 1066.0 167L1217.0 158Q1196.0 78 1128.0 33.0Q1060.0 -12 963.0 -12ZM848.0 320H1071.0Q1068.0 379 1038.5 408.0Q1009.0 437 962.0 437Q915.0 437 884.5 406.5Q854.0 376 848.0 320ZM1442.0 0Q1376.0 0 1339.0 33.0Q1302.0 66 1302.0 140V710H1452.0V156Q1452.0 132 1463.0 122.0Q1474.0 112 1495.0 112H1531.0V0ZM1730.0 0Q1664.0 0 1627.0 33.0Q1590.0 66 1590.0 140V710H1740.0V156Q1740.0 132 1751.0 122.0Q1762.0 112 1783.0 112H1819.0V0Z"/></g></g><g class="sw-g sw-g-want" clip-path="url(#sw-cw)"><g transform="translate(0 726) scale(1 -1)"><path d="M2041.0 0 1849.0 710H2008.0L2130.0 210L2253.0 710H2386.0L2510.0 210L2631.0 710H2790.0L2599.0 0H2435.0L2319.0 454L2203.0 0ZM3027.0 -12Q2944.0 -12 2891.5 26.5Q2839.0 65 2839.0 134Q2839.0 205 2883.5 243.5Q2928.0 282 3015.0 300L3188.0 334Q3188.0 386 3164.5 412.5Q3141.0 439 3097.0 439Q3054.0 439 3030.0 419.5Q3006.0 400 2999.0 362L2848.0 369Q2863.0 457 2927.5 502.5Q2992.0 548 3097.0 548Q3217.0 548 3277.5 491.0Q3338.0 434 3338.0 324V141Q3338.0 118 3345.5 110.5Q3353.0 103 3368.0 103H3383.0V0Q3376.0 -2 3360.5 -4.0Q3345.0 -6 3330.0 -6Q3298.0 -6 3270.5 5.0Q3243.0 16 3226.0 42.5Q3209.0 69 3209.0 118L3222.0 108Q3212.0 72 3186.5 45.0Q3161.0 18 3120.5 3.0Q3080.0 -12 3027.0 -12ZM3063.0 91Q3100.0 91 3128.0 105.5Q3156.0 120 3172.0 148.0Q3188.0 176 3188.0 214V240L3066.0 214Q3030.0 207 3011.5 190.5Q2993.0 174 2993.0 148Q2993.0 121 3011.0 106.0Q3029.0 91 3063.0 91ZM3437.0 0V536H3572.0L3578.0 379L3559.0 384Q3567.0 444 3591.5 480.0Q3616.0 516 3653.0 532.0Q3690.0 548 3734.0 548Q3792.0 548 3832.5 523.0Q3873.0 498 3894.5 452.5Q3916.0 407 3916.0 345V0H3766.0V295Q3766.0 338 3759.0 368.0Q3752.0 398 3734.0 413.5Q3716.0 429 3684.0 429Q3637.0 429 3612.0 394.5Q3587.0 360 3587.0 295V0ZM4245.0 0Q4162.0 0 4123.0 38.5Q4084.0 77 4084.0 161V662H4234.0V179Q4234.0 140 4250.5 126.0Q4267.0 112 4300.0 112H4375.0V0ZM3998.0 424V536H4375.0V424Z"/></g></g></svg><svg class="scratch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 22 2, 58 2, 78 5 C 86 6, 93 7, 98 4"/></svg></span>
+          <span class="row-meta">2026 &middot; Live</span>
+        </a>
+        <p class="row-desc">A marketplace with two kinds of listing: what people are selling, and what people are trying to buy. A want and a sale meet in the middle and lock in.</p>
+        <div class="swap" id="swap" role="group" aria-label="A wanted listing and a for sale listing at the same price, meeting and locking in">
+          <div class="swap-track">
+            <span class="swap-card want"><b>Wanted</b><span class="swap-it">ACL weekend one</span><span class="swap-px">$150</span></span>
+            <span class="swap-card sale"><b>For sale</b><span class="swap-it">ACL weekend one</span><span class="swap-px">$150</span></span>
+          </div>
+          <p class="swap-out" id="swap-out" aria-live="polite"></p>
+          <button id="swap-btn" type="button">Match one</button>
+        </div>
+        <p class="row-note">Running on the Austin ticket scene first: ACL weekends, formals, Halloween. Preset categories and structured browsing instead of a feed you have to scroll.</p>
+      </div>
+
+      <div class="row">
+        <div class="row-head">
+          <span class="row-name">
+            <span class="pp-mark" id="pp-mark" role="img" aria-label="PayPal"><i class="pp-a">Pay</i><i class="pp-b">Pal</i></span>
+            <svg class="scratch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 22 2, 58 2, 78 5 C 86 6, 93 7, 98 4"/></svg>
+          </span>
+          <span class="row-meta">2026 &middot; Internship</span>
+        </div>
+        <p class="row-desc">Rebuilt the front end of PayPal's instant commerce links, the buttons a merchant uses to sell something from a photo, a price and a link.</p>
+        <p class="row-note">Owned it from low-level design through a staged production ramp. Those buttons move more than a million dollars a month.</p>
+      </div>
+      <div class="row">
+        <a class="row-head" href="https://texarg.com">
+          <span class="row-name">wa-slack<svg class="scratch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 22 2, 58 2, 78 5 C 86 6, 93 7, 98 4"/></svg></span>
+          <span class="row-meta">2026 &middot; In production</span>
+        </a>
+        <p class="row-desc">A WhatsApp inbox that lives inside Slack. A customer message arrives as a thread in a channel the support team already has open, and the reply goes straight back out to WhatsApp.</p>
+        <div class="relay" id="relay" role="group" aria-label="A customer message crossing from WhatsApp into Slack, and the reply crossing back">
+          <div class="relay-panes">
+            <div class="relay-pane"><span class="relay-hd">WhatsApp</span><div class="relay-log" id="relay-wa"></div></div>
+            <div class="relay-pane"><span class="relay-hd">Slack</span><div class="relay-log" id="relay-sl"></div></div>
+          </div>
+          <button id="relay-btn" type="button">Open a ticket</button>
+        </div>
+        <p class="row-note">One thread per ticket, one channel per company, and a dashboard for whoever is working the queue. Built at Texarg, carrying real conversations.</p>
+      </div>
+      <div class="row">
+        <a class="row-head" href="https://texarg.com">
+          <span class="row-name tx-name"><img class="tx-logo" src="data:image/png;base64,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" alt="" aria-hidden="true">Texarg<svg class="scratch" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 22 2, 58 2, 78 5 C 86 6, 93 7, 98 4"/></svg></span>
+          <span class="row-meta">2022 &middot; Running</span>
+        </a>
+        <p class="row-desc">Custom automation for local businesses: appointment reminders, lead routing, document processing, billing. I map where a business is losing hours, then build the thing that stops it. Not templates.</p>
+        <div class="flow" id="flow" role="group" aria-label="A live workflow: a job enters, gets routed, triggers a reminder, and closes with an invoice">
+          <svg id="flow-svg" viewBox="0 0 300 52" aria-hidden="true"></svg>
+          <button id="flow-btn" type="button">Send one through</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WRITING ============================= -->
+  <section class="block" data-anchor>
+    <span class="hd">
+      <h2>Writing</h2>
+      <svg class="rule" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 C 26 3, 62 3, 88 6 C 100 7.5, 110 8.5, 118 5" /></svg>
+    </span>
+    <p class="sub">Mostly religion and political philosophy. Class essays I liked enough to publish.</p>
+    <div class="posts">
+      <div class="post">
+        <a class="t" href="https://x.com/BotbolLucas/status/2083665823848419682">Religious Interpretations of Gender Inequality</a>
+        <span class="d">01 Aug 2026</span>
+        <button class="q-btn" type="button" aria-expanded="false" aria-controls="q1" aria-label="Read a line from this essay">&ldquo;</button>
+        <blockquote class="pull" id="q1">
+          <svg class="brk" viewBox="0 0 6 40" preserveAspectRatio="none" aria-hidden="true"><path d="M5 2 C 2 8, 2 14, 3 20 C 2 26, 2 32, 5 38"/></svg>
+          <p>Is gender inequality justified by God, or has it been misinterpreted for millennia?</p>
+        </blockquote>
+      </div>
+      <div class="post">
+        <a class="t" href="https://x.com/BotbolLucas/status/2083072443049189460">Idolatry, Truth, and Religious Boundaries</a>
+        <span class="d">30 Jul 2026</span>
+        <button class="q-btn" type="button" aria-expanded="false" aria-controls="q2" aria-label="Read a line from this essay">&ldquo;</button>
+        <blockquote class="pull" id="q2">
+          <svg class="brk" viewBox="0 0 6 40" preserveAspectRatio="none" aria-hidden="true"><path d="M5 2 C 2 8, 2 14, 3 20 C 2 26, 2 32, 5 38"/></svg>
+          <p>Could there be a logical reasoning for the greater reconciliation between the Abrahamic practitioners, or even all religions?</p>
+        </blockquote>
+      </div>
+      <div class="post">
+        <a class="t" href="https://x.com/BotbolLucas/status/2082199237874577746">Abundance of Freedom, Poverty of Property</a>
+        <span class="d">28 Jul 2026</span>
+        <button class="q-btn" type="button" aria-expanded="false" aria-controls="q3" aria-label="Read a line from this essay">&ldquo;</button>
+        <blockquote class="pull" id="q3">
+          <svg class="brk" viewBox="0 0 6 40" preserveAspectRatio="none" aria-hidden="true"><path d="M5 2 C 2 8, 2 14, 3 20 C 2 26, 2 32, 5 38"/></svg>
+          <p>The State of Nature offers immense abundance in freedom. However, this freedom is worthless as it doesn't allow prosperity and property to gain value.</p>
+        </blockquote>
+      </div>
+    </div>
+    <a class="more" href="https://x.com/BotbolLucas/articles">All essays on X &rarr;</a>
+  </section>
+
+  <!-- ============================= NOW ============================= -->
+  <section class="block" data-anchor>
+    <span class="hd">
+      <h2>Now</h2>
+      <svg class="rule" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 C 26 3, 62 3, 88 6 C 100 7.5, 110 8.5, 118 5" /></svg>
+    </span>
+    <p class="now-date">Updated 13 August 2026</p>
+    <ul class="now-list">
+      <li>Packing for <b>Seoul</b>, studying abroad there for the fall.</li>
+      <li>Building <b>Klini</b>, and rebuilding this site while I'm at it.</li>
+      <li>Writing <b>SWE at PayPal</b> during the day, growing <b>Texas Blockchain</b> at UT the rest of it.</li>
+      <li>Deep in <b>SVG animation</b>. The globe above is eight path elements and about 6&nbsp;KB of maths, no images.</li>
+      <li data-fake>One line about what you're reading or arguing with right now. This is the slot people actually read to decide whether you're interesting, make it specific.</li>
+    </ul>
+  </section>
+
+  <!-- ============================= ELSEWHERE ============================= -->
+  <section class="block" data-anchor>
+    <span class="hd">
+      <h2>Elsewhere</h2>
+      <svg class="rule" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 C 26 3, 62 3, 88 6 C 100 7.5, 110 8.5, 118 5" /></svg>
+    </span>
+    <div class="links">
+      <a class="link" href="https://x.com/BotbolLucas"><span class="k">X</span><span class="v">@BotbolLucas</span></a>
+      <a class="link" href="https://www.linkedin.com/in/lucasbotbolagusti/"><span class="k">LinkedIn</span><span class="v">lucasbotbolagusti</span></a>
+      <a class="link" href="https://instagram.com/lucasbotbol"><span class="k">Instagram</span><span class="v">@lucasbotbol</span></a>
+      <a class="link" href="mailto:lucas@botbol.us"><span class="k">Email</span><span class="v">lucas@botbol.us</span>
+        <button id="copy-mail" type="button" aria-label="Copy email address">Copy</button></a>
+    </div>
+  </section>
+
+  <footer class="block">
+    <span>Buenos Aires <b id="t-eze">&middot;&middot;</b></span>
+    <span>Austin <b id="t-local">&middot;&middot;</b></span>
+    <span>Seoul <b id="t-seoul">&middot;&middot;</b></span>
+    <span><b id="n-flights">0</b> flights &middot; <b id="n-km">0</b> km</span>
+    <span>luc4s.co</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var RAD = Math.PI/180, NS = "http://www.w3.org/2000/svg";
+
+  /* Fire once, and only after the element has cleared the bottom quarter of the
+     screen, a demo that triggers the instant it peeks over the bottom edge plays
+     to nobody.
+
+     Deliberately plain scroll math rather than an IntersectionObserver. Some of
+     these reveals gate real content (the Klini wordmark, the handwritten line),
+     and an observer whose callback never lands leaves that content hidden for
+     good. Measuring the rect on every scroll can't miss, and it self-corrects on
+     load: anything already above the trigger line fires immediately, so a reader
+     who arrives mid-page never faces a blank space. */
+  var pendingReveals = [], revealPoll = null;
+  function checkReveals(){
+    if (!pendingReveals.length){
+      if (revealPoll){ clearInterval(revealPoll); revealPoll = null; }
+      return;
+    }
+    var vh = window.innerHeight;
+    pendingReveals = pendingReveals.filter(function(p){
+      if (p.el.getBoundingClientRect().top < vh * p.at){ p.fn(); return false; }
+      return true;
+    });
+  }
+  function onceWellInView(el, fn, frac){
+    pendingReveals.push({ el:el, fn:fn, at: frac || 0.75 });
+    /* A scroll listener is not enough on its own. Embed this page in a viewer
+       whose outer frame does the scrolling and this window never hears a scroll
+       event, so a reveal waiting on one would hang and take its content with it.
+       Polling costs a couple of rect reads and stops itself the moment the queue
+       drains, cheap insurance against a page that silently loses its words. */
+    if (!revealPoll) revealPoll = setInterval(checkReveals, 350);
+    checkReveals();
+  }
+  window.addEventListener("scroll", checkReveals, { passive:true });
+  window.addEventListener("resize", checkReveals);
+
+  /* ===================== globe (sketch hand, interactive) ===================== */
+  var COAST = "vo@f[f@e@JxEs@sD!|s@noBDaVYpEs@~@OoEcAnFa@mGk@on@yB_@gA}D|A|CpBaBlBvInAkKy@oQg@nCsCaQUm[oA}Hh@_HvASyBiJQm\\~BqUxAvCr@cAh@nCfAqJB|~E!r`@ji@Pu@e@~DRiC!jInoBCs_FEr_F!nGi^`Fz@@|@oDGs@qB!rGwxAtF}D`F|@JzDaCxDt@dIwFPuEmJbC{CkCm@|@U!fC{bA^mC]lEA_A!VyrAt@qEdCyBk@dGuClCDgA!tBcaAcFpEjBiDvBg@!c@uhArBb@eAjCsCwCdBW!gMxp@p@mB_@vEQiB!eVcwApBvEgE_FtAF!qh@`HPbEQcE!cj@noBz@iERhE!uk@noBL_`FM~_F!mj@pw@d@wDnBlF`BQtBwF}Ec@AuArAyBi@}@bDqDhBrHo@wB`AiBfCjIxC`BzBQaBhAb@xFrDEk@wDnBb@JmB`Cg@gA_E`AA}@c@\\_DvEeFnCyHbHzBxF`GIzAz@_@rAdD|FtBoCzAwOkBqG|E_H}@gExNmG`FjDkB]v@wHrFmD_@uD`F_AhIhCzGyA{Cs@tDaAiBQpCqBeFnAy\\@_G{AQn@}A!ul@jfA|@gG_@nJ]gB!wl@bu@|BmNJxBvAc@m@dFeA_BeArIg@aA!sk@hjAIjB_@oEh@bB!sn@rbALq@DnFS}D!ek@}b@YvByA{Ij@nEfAR!eo@dz@j@iHk@hH!yXu]hAAJ{AwCdAm@u@l@|B`Ao@!sg@noB?_`FdBhIpDdCsBPsBkD|CjQp@}BvFtG|A_@sBtC`@fA`@wAr@~@dCq@fDzH~BcA~ApA_BdBpFqAmL~FhC|E|Cv@kG`BoAzB{AnJvBkAo@{ApAcA`EdIyI|EjJmETeDpHjFfE_@dBvBtAMlDpCf@jDmIzCsCe@_HtAUnJsCvCaEFuG}E_@sHlC_EMeHqBo@w@fEq@uH_AbBi@o@LfDjEbDyDzDlBkBj@n@_CnCxCzECfCyBHS_D}A~@_B}FgAGt@_FoB{DMzCwAqAK~@lExDqAp@P|AoACgDsJdAkIP|Ct@kA}AaCHsNy@b@c@uBbCBcCm@aBqQhCyOZq\\Fb_F!yp@mJL_AM|E?}C!yp@ju@I`EHaE!}r@xi@HcC~BtJEpDoAyC[bEWmM!es@|ON}BH|EPiKTzCtBKpAjC@qAzA|IjBfAeAbDgAn@u@}@oBxCq@dHmB{[";
+  function decodePoly(s){
+    var pts=[], i=0, lat=0, lon=0, b, shift, res;
+    while (i < s.length){
+      shift=0; res=0;
+      do { b=s.charCodeAt(i++)-63; res |= (b & 0x1f)<<shift; shift+=5; } while (b >= 0x20);
+      lat += (res&1) ? ~(res>>1) : (res>>1);
+      shift=0; res=0;
+      do { b=s.charCodeAt(i++)-63; res |= (b & 0x1f)<<shift; shift+=5; } while (b >= 0x20);
+      lon += (res&1) ? ~(res>>1) : (res>>1);
+      pts.push([lat/10, lon/10]);
+    }
+    return pts;
+  }
+  var COASTS = COAST.split("!").map(decodePoly);
+
+  /* 1,249 populated places (Natural Earth 50m) so a double-click lands on a
+     real name instead of a pair of coordinates */
+  var CITY_BLOB = "Singapore,SG,1.29,103.85;Hong Kong,HK,22.31,114.18;Los Angeles,US,34.05,-118.23;Washington  D.C.,US,38.90,-77.01;New York,US,40.72,-74.00;Beijing,CN,39.90,116.39;Jakarta,ID,-6.17,106.83;Shanghai,CN,31.22,121.43;Mumbai,IN,19.07,72.88;Kolkata,IN,22.57,88.37;Rio de Janeiro,BR,-22.91,-43.21;Sao Paulo,BR,-23.56,-46.63;Moscow,RU,55.75,37.61;Mexico City,MX,19.44,-99.13;Lagos,NG,6.45,3.39;Tokyo,JP,35.69,139.75;Cape Town,ZA,-33.92,18.43;Rome,IT,41.90,12.48;Cairo,EG,30.05,31.25;Paris,FR,48.86,2.35;Santiago,CL,-33.44,-70.65;Sydney,AU,-33.87,151.21;London,GB,51.50,-0.12;Istanbul,TR,41.02,28.97;Riyadh,SA,24.63,46.72;Nairobi,KE,-1.28,36.81;Bogota,CO,4.60,-74.09;San Francisco,US,37.78,-122.40;Denver,US,39.74,-104.99;Houston,US,29.74,-95.35;Miami,US,25.79,-80.23;Atlanta,US,33.74,-84.37;Chicago,US,41.85,-87.64;Urumqi,CN,43.81,87.57;Chengdu,CN,30.67,104.07;New Delhi,IN,28.60,77.20;Bengaluru,IN,12.97,77.56;Monterrey,MX,25.67,-100.33;Osaka,JP,34.69,135.50;Vancouver,CA,49.28,-123.12;Toronto,CA,43.66,-79.39;Madrid,ES,40.40,-3.69;Johannesburg,ZA,-26.17,28.03;Seoul,KR,37.57,127.00;Berlin,DE,52.52,13.40;Kinshasa,CD,-4.33,15.31;Addis Ababa,ET,9.04,38.70;Buenos Aires,AR,-34.61,-58.43;Melbourne,AU,-37.82,144.97;Kiev,UA,50.44,30.51;Bangkok,TH,13.75,100.51;Lima,PE,-12.05,-77.05;Casablanca,MA,33.60,-7.62;Manila,PH,14.61,120.98;Baghdad,IQ,33.34,44.39;Tehran,IR,35.67,51.42;Kabul,AF,34.52,69.18;Caracas,VE,10.50,-66.92;Tashkent,UZ,41.30,69.27;Athens,GR,37.99,23.73;Geneva,CH,46.21,6.14;Stockholm,SE,59.32,18.07;Vienna,AT,48.20,16.36;Dubai,AE,25.21,55.29;Dakar,SN,14.72,-17.48;Amsterdam,NL,52.35,4.91;Taipei,TW,25.04,121.57;Auckland,NZ,-36.85,174.76;Shenzhen,CN,22.55,114.06;Zibo,CN,36.82,118.00;Minneapolis,US,44.98,-93.25;Honolulu,US,21.30,-157.86;Seattle,US,47.60,-122.32;Phoenix,US,33.45,-112.07;San Diego,US,32.72,-117.15;St. Louis,US,38.64,-90.24;New Orleans,US,29.97,-90.09;Dallas,US,32.77,-96.79;Boston,US,42.33,-71.07;Tampa,US,27.95,-82.46;Philadelphia,US,39.95,-75.18;Detroit,US,42.33,-83.05;Anchorage,US,61.21,-149.89;Medan,ID,3.58,98.65;Lanzhou,CN,36.06,103.79;Nanning,CN,22.82,108.32;Guiyang,CN,26.58,106.72;Chongqing,CN,29.57,106.59;Fuzhou,CN,26.08,119.30;Guangzhou,CN,23.12,113.26;Dongguan,CN,23.02,113.75;Bandung,ID,-6.95,107.57;Surabaya,ID,-7.25,112.75;Xian,CN,34.28,108.89;Taiyuan,CN,37.88,112.54;Wuhan,CN,30.58,114.27;Changsha,CN,28.20,112.97;Kunming,CN,25.04,102.70;Zhengzhou,CN,34.76,113.66;Shenyeng,CN,41.81,123.45;Jinan,CN,36.68,116.99;Tianjin,CN,39.08,117.20;Nanchang,CN,28.68,115.88;Nanjing,CN,32.05,118.78;Hangzhou,CN,30.25,120.17;Changchun,CN,43.87,125.34;Baotou,CN,40.65,109.82;Harbin,CN,45.75,126.65;Delhi,IN,28.67,77.23;Hyderabad,IN,17.40,78.48;Pune,IN,18.52,73.85;Nagpur,IN,21.17,79.09;Jaipur,IN,26.92,75.81;Kanpur,IN,26.46,80.32;Patna,IN,25.63,85.13;Chennai,IN,13.09,80.28;Ahmedabad,IN,23.03,72.58;Surat,IN,21.20,72.84;Belem,BR,-1.45,-48.48;Brasilia,BR,-15.78,-47.92;Porto Alegre,BR,-30.05,-51.20;Curitiba,BR,-25.42,-49.32;Fortaleza,BR,-3.75,-38.58;Salvador,BR,-12.97,-38.48;Goiania,BR,-16.72,-49.30;Recife,BR,-8.06,-34.91;Lahore,PK,31.56,74.35;Karachi,PK,24.87,66.99;St. Petersburg,RU,59.94,30.31;Guadalajara,MX,20.67,-103.33;Puebla,MX,19.03,-98.20;Kano,NG,12.00,8.52;Hiroshima,JP,34.39,132.44;Sapporo,JP,43.08,141.34;Edmonton,CA,53.55,-113.50;Montreal,CA,45.50,-73.59;Dhaka,BD,23.73,90.41;Chattogram,BD,22.33,91.80;Barcelona,ES,41.39,2.18;Durban,ZA,-29.86,31.01;Naples,IT,40.84,14.24;Milan,IT,45.47,9.20;Alexandria,EG,31.20,29.95;Frankfurt,DE,50.10,8.68;Hamburg,DE,53.55,10.00;Munich,DE,48.13,11.57;Perth,AU,-31.95,115.84;Hanoi,VN,21.04,105.85;Ho Chi Minh City,VN,10.76,106.70;Ankara,TR,39.93,32.86;Khartoum,SD,15.59,32.53;Jeddah,SA,21.52,39.22;Makkah,SA,21.43,39.82;Warsaw,PL,52.23,21.01;Dar es Salaam,TZ,-6.80,39.27;Medellin,CO,6.28,-75.58;Cali,CO,3.40,-76.50;Mashhad,IR,36.27,59.57;Algiers,DZ,36.77,3.05;Rangoon,MM,16.79,96.16;Maracaibo,VE,10.73,-71.66;Budapest,HU,47.50,19.08;Sanaa,YE,15.36,44.20;Bucharest,RO,44.44,26.10;Aleppo,SY,36.23,37.17;Damascus,SY,33.50,36.30;Lisbon,PT,38.72,-9.15;Pyongyang,KP,39.02,125.75;Kuala Lumpur,MY,3.14,101.69;Havana,CU,23.13,-82.37;Accra,GH,5.55,-0.22;Luanda,AO,-8.84,13.23;Zurich,CH,47.38,8.55;Oslo,NO,59.92,10.75;Guayaquil,EC,-2.22,-79.92;Prague,CZ,50.09,14.42;Tripoli,LY,32.89,13.18;Helsinki,FI,60.16,24.93;Dublin,IE,53.35,-6.26;Monrovia,LR,6.31,-10.80;Kuwait City,KW,29.37,47.98;Santo Domingo,DO,18.47,-69.93;Tel Aviv-Yafo,IL,32.08,34.77;Kobenhavn,DK,55.68,12.56;Abidjan,CI,5.32,-4.02;Brussels,BE,50.84,4.33;San Juan,PR,18.44,-66.13;Stanley,FK,-51.70,-57.85;Hamilton,BM,32.29,-64.78;Nukualofa,TO,-21.14,-175.22;Hargeysa,-9,9.56,44.07;Victoria,SC,-4.62,55.45;Sao Tome,ST,0.34,6.73;Apia,WS,-13.84,-171.77;Valletta,MT,35.90,14.51;Male,MV,4.17,73.51;Jerusalem,IL,31.78,35.21;Praia,CV,14.92,-23.52;Nassau,BS,25.08,-77.35;Nicosia,CY,35.17,33.37;Kozhikode,IN,11.25,75.77;Bhubaneshwar,IN,20.27,85.83;Jamshedpur,IN,22.79,86.20;Helena,US,46.59,-112.04;Bismarck,US,46.81,-100.78;Boise,US,43.61,-116.23;San Jose,US,37.33,-121.89;Sacramento,US,38.58,-121.47;Las Vegas,US,36.16,-115.15;Santa Fe,US,35.69,-105.94;Portland,US,45.52,-122.68;Salt Lake City,US,40.78,-111.93;Cheyenne,US,41.14,-104.82;Des Moines,US,41.58,-93.62;Omaha,US,41.24,-96.01;Oklahoma City,US,35.47,-97.52;Pierre,US,44.37,-100.35;San Antonio,US,29.42,-98.49;Jackson,US,32.30,-90.18;Raleigh,US,35.77,-78.65;Cleveland,US,41.47,-81.70;Cincinnati,US,39.16,-84.46;Nashville,US,36.17,-86.78;Memphis,US,35.14,-90.03;Norfolk,US,36.85,-76.28;Milwaukee,US,43.03,-87.92;Buffalo,US,42.88,-78.88;Pittsburgh,US,40.43,-80.00;Kodiak,US,57.79,-152.41;Cold Bay,US,55.20,-162.72;Bethel,US,60.79,-161.76;Point Hope,US,68.35,-166.81;Utqiagvik,US,71.29,-156.79;Nome,US,64.51,-165.41;Valdez,US,61.14,-146.35;Juneau,US,58.30,-134.40;Fairbanks,US,64.84,-147.71;Prudhoe Bay,US,70.29,-148.67;Padang,ID,-0.96,100.36;Jiayuguan,CN,39.82,98.30;Xining,CN,36.62,101.77;Guilin,CN,25.28,110.28;Huainan,CN,32.63,116.98;Shantou,CN,23.37,116.67;Tarakan,ID,3.30,117.63;Semarang,ID,-6.96,110.42;Palembang,ID,-2.98,104.75;Bandjarmasin,ID,-3.33,114.58;Makassar,ID,-5.14,119.43;Lhasa,CN,29.65,91.10;Hami,CN,42.83,93.52;Hotan,CN,37.10,79.93;Kashgar,CN,39.48,75.97;Yinchuan,CN,38.47,106.27;Pingxiang,CN,27.62,113.85;Qiqihar,CN,47.35,123.99;Vishakhapatnam,IN,17.68,83.22;Amritsar,IN,31.64,74.87;Varanasi,IN,25.33,83.00;Asansol,IN,23.69,86.98;Bhilai,IN,21.21,81.37;Bhopal,IN,23.25,77.41;Madurai,IN,9.92,78.12;Coimbatore,IN,11.00,76.95;Cruzeiro do Sul,BR,-7.63,-72.67;Leticia,CO,-4.20,-69.96;Manaus,BR,-3.10,-60.00;Caxias,BR,-4.83,-43.35;Santarem,BR,-2.43,-54.70;Maraba,BR,-5.35,-49.12;Vilhena,BR,-12.72,-60.12;Ji-Parana,BR,-10.83,-61.97;Campo Grande,BR,-20.45,-54.62;Florianopolis,BR,-27.58,-48.52;Feira de Santana,BR,-12.25,-38.97;Boa Vista,BR,2.82,-60.67;Macapa,BR,0.03,-51.05;Islamabad,PK,33.69,73.08;Multan,PK,30.20,71.45;Hyderabad,PK,25.38,68.37;Peshawar,PK,34.01,71.53;Tomsk,RU,56.49,84.98;Anadyr,RU,64.74,177.47;Murmansk,RU,68.97,33.10;Archangel,RU,64.57,40.55;Nizhny Novgorod,RU,56.33,44.00;Volgograd,RU,48.71,44.50;Ufa,RU,54.79,56.04;Yekaterinburg,RU,56.85,60.60;Samara,RU,53.20,50.15;Kazan,RU,55.75,49.12;Surgut,RU,61.26,73.43;Barnaul,RU,53.35,83.75;Novosibirsk,RU,55.03,82.96;Bratsk,RU,56.16,101.62;Irkutsk,RU,52.28,104.28;Krasnoyarsk,RU,56.02,92.86;Dikson,RU,73.51,80.55;Chita,RU,52.06,113.47;Vladivostok,RU,43.13,131.91;Nizhneyansk,RU,71.43,136.07;Yakutsk,RU,62.03,129.74;Tiksi,RU,71.63,128.83;Magadan,RU,59.57,150.81;Tijuana,MX,32.50,-117.08;Chihuahua,MX,28.65,-106.09;Mazatlan,MX,23.22,-106.42;Tampico,MX,22.30,-97.87;Acapulco,MX,16.85,-99.92;Veracruz,MX,19.18,-96.16;Tuxtla Gutierrez,MX,16.75,-93.15;Cancun,MX,21.17,-86.83;Merida,MX,20.97,-89.62;Enugu,NG,6.45,7.50;Sokoto,NG,13.06,5.24;Perm,RU,58.00,56.25;Palana,RU,59.08,159.95;Petropavlovsk Kamchatskiy,RU,53.06,158.62;Abuja,NG,9.05,7.49;Nagasaki,JP,32.76,129.89;Winnipeg,CA,49.88,-97.17;Churchill,CA,58.77,-94.17;Regina,CA,50.45,-104.62;Saskatoon,CA,52.17,-106.67;Calgary,CA,51.08,-114.08;Prince Rupert,CA,54.32,-130.33;Victoria,CA,48.43,-123.35;Arctic Bay,CA,73.03,-85.17;Resolute,CA,74.68,-94.90;Repulse Bay,CA,66.53,-86.28;Yellowknife,CA,62.44,-114.40;Fort Good Hope,CA,66.27,-128.63;Whitehorse,CA,60.72,-135.05;Ottawa,CA,45.42,-75.70;Fort Severn,CA,55.98,-87.65;Thunder Bay,CA,48.45,-89.27;Quebec,CA,46.84,-71.25;Halifax,CA,44.65,-63.60;St. John's,CA,47.58,-52.68;Nain,CA,56.55,-61.69;Charlottetown,CA,46.25,-63.13;Seville,ES,37.41,-5.98;Bloemfontein,ZA,-29.12,26.23;Pretoria,ZA,-25.70,28.23;Port Elizabeth,ZA,-33.97,25.60;Valencia,ES,39.49,-0.40;Palermo,IT,38.13,13.35;Lyon,FR,45.77,4.83;Bumba,CD,2.19,22.46;Luxor,EG,25.70,32.65;Kikwit,CD,-5.03,18.85;Matadi,CD,-5.82,13.45;Kolwezi,CD,-10.72,25.47;Lubumbashi,CD,-11.68,27.48;Punta Arenas,CL,-53.16,-70.94;Iquique,CL,-20.25,-70.13;Antofagasta,CL,-23.65,-70.40;Valparaiso,CL,-33.05,-71.62;Valdivia,CL,-39.82,-73.23;Concepcion,CL,-36.83,-73.05;Puerto Montt,CL,-41.47,-72.93;Gonder,ET,12.61,37.46;Puerto Deseado,AR,-47.75,-65.90;Rio Gallegos,AR,-51.63,-69.22;Comodoro Rivadavia,AR,-45.87,-67.50;Mendoza,AR,-32.88,-68.82;Bahia Blanca,AR,-38.74,-62.27;Mar del Plata,AR,-38.00,-57.58;Cordoba,AR,-31.40,-64.18;Posadas,AR,-27.36,-55.89;Darwin,AU,-12.43,130.85;Alice Springs,AU,-23.70,133.88;Canberra,AU,-35.28,149.13;Newcastle,AU,-32.93,151.77;Adelaide,AU,-34.93,138.60;Townsville,AU,-19.25,146.77;Brisbane,AU,-27.45,153.03;Hobart,AU,-42.85,147.30;Sevastapol,RU,44.60,33.52;Glasgow,GB,55.86,-4.24;Kampala,UG,0.32,32.58;Port Sudan,SD,19.62,37.22;Cusco,PE,-13.53,-71.97;Tacna,PE,-18.00,-70.25;Trujillo,PE,-8.12,-79.02;Ica,PE,-14.07,-75.73;Niyala,SD,12.06,24.89;Wau,SS,7.70,27.99;Dongola,SD,19.17,30.48;Kassala,SD,15.46,36.39;Fez,MA,34.06,-5.00;Rabat,MA,34.03,-6.84;Marrakesh,MA,31.63,-8.00;Cebu,PH,10.32,123.90;Iloilo,PH,10.71,122.55;Davao,PH,7.11,125.63;Mbeya,TZ,-8.89,33.43;Zanzibar,TZ,-6.16,39.20;Mombasa,KE,-4.04,39.69;Cartagena,CO,10.40,-75.52;Mitu,CO,1.20,-70.17;Isfahan,IR,32.70,51.70;Shiraz,IR,29.63,52.57;Kandahar,AF,31.61,65.69;Oran,DZ,35.71,-0.62;Tamanrasset,DZ,22.79,5.52;Ghardaia,DZ,32.49,3.67;Naypyidaw,MM,19.77,96.12;San Cristobal,VE,7.77,-72.25;Valencia,VE,10.23,-67.98;Ciudad Guayana,VE,8.37,-62.62;Samarqand,UZ,39.67,66.94;Lusaka,ZM,-15.41,28.28;Harare,ZW,-17.82,31.04;Bulawayo,ZW,-20.17,28.58;Aden,YE,12.78,45.01;Zinder,NE,13.80,8.98;Niamey,NE,13.52,2.11;Agadez,NE,17.00,7.98;Kathmandu,NP,27.72,85.31;Nacala,MZ,-14.52,40.72;Beira,MZ,-19.82,34.87;Maputo,MZ,-25.95,32.59;Colombo,LK,6.93,79.86;Windhoek,NA,-22.57,17.08;Grootfontein,NA,-19.57,18.12;Antananarivo,MG,-18.91,47.51;Timbuktu,ML,16.77,-3.02;Bamako,ML,12.65,-8.00;Djenne,ML,13.90,-4.55;Thessaloniki,GR,40.70,22.88;Astana,KZ,51.18,71.43;Qaraghandy,KZ,49.88,73.12;Almaty,KZ,43.33,76.91;Sucre,BO,-19.04,-65.26;Riberalta,BO,-10.98,-66.10;Maroua,CM,10.60,14.32;Yaounde,CM,3.87,11.51;Menongue,AO,-14.67,17.70;Huambo,AO,-12.75,15.76;La Paz,BO,-16.50,-68.15;Santa Cruz,BO,-17.75,-63.23;Minsk,BY,53.90,27.56;Tunis,TN,36.80,10.18;Asuncion,PY,-25.29,-57.63;Tromso,NO,69.64,18.99;Trondheim,NO,63.42,10.42;Bergen,NO,60.39,5.32;Erdenet,MN,49.05,104.12;Ulaanbaatar,MN,47.92,106.91;Quito,EC,-0.21,-78.50;Ndjamena,TD,12.12,15.05;Abeche,TD,13.84,20.83;Libreville,GA,0.39,9.46;Port-Gentil,GA,-0.72,8.78;Nouakchott,MR,18.09,-15.98;Atar,MR,20.52,-13.05;Sabha,LY,27.03,14.43;Banghazi,LY,32.12,20.06;Brazzaville,CG,-4.26,15.28;Ndele,CF,8.41,20.65;Obo,CF,5.40,26.50;Bangui,CF,4.37,18.56;Sofia,BG,42.69,23.31;Gaborone,BW,-24.65,25.91;Montevideo,UY,-34.91,-56.19;Lome,TG,6.13,1.22;Abu Dhabi,AE,24.47,54.37;Ashgabat,TM,37.95,58.38;Dili,TL,-8.56,125.58;Port Vila,VU,-17.73,168.32;Tegucigalpa,HN,14.10,-87.22;Georgetown,GY,6.80,-58.17;Reykjavik,IS,64.14,-21.94;Port-au-Prince,HT,18.54,-72.34;Paramaribo,SR,5.84,-55.17;Dushanbe,TJ,38.56,68.77;Managua,NI,12.15,-86.27;Freetown,SL,8.47,-13.24;Port Moresby,PG,-9.46,147.19;Honiara,SB,-9.44,159.95;Panama City,PA,8.97,-79.53;Chisinau,MD,47.01,28.86;Mogadishu,SO,2.07,45.36;Muscat,OM,23.59,58.38;Bissau,GW,11.87,-15.60;Amman,JO,31.95,35.93;Vilnius,LT,54.68,25.32;Riga,LV,56.95,24.10;Bishkek,KG,42.88,74.58;Maseru,LS,-29.32,27.48;San Jose,CR,9.93,-84.08;San Salvador,SV,13.70,-89.22;Kingston,JM,17.98,-76.77;Malabo,GQ,3.75,8.78;Asmara,ER,15.33,38.93;Zagreb,HR,45.80,16.00;Tallinn,EE,59.43,24.73;Lilongwe,MW,-13.98,33.78;Guatemala,GT,14.62,-90.53;Cayenne,GF,4.93,-52.33;Suva,FJ,-18.13,178.44;Nuuk,GL,64.20,-51.73;Beirut,LB,33.87,35.51;Tbilisi,GE,41.73,44.79;Vientiane,LA,17.97,102.60;Conakry,GN,9.53,-13.68;Yamoussoukro,CI,6.82,-5.28;Belgrade,RS,44.82,20.47;Bandar Seri Begawan,BN,4.88,114.93;Belmopan,BZ,17.25,-88.77;Tirana,AL,41.33,19.82;Yerevan,AM,40.18,44.51;Baku,AZ,40.40,49.86;Phnom Penh,KH,11.55,104.91;Cotonou,BJ,6.36,2.40;Thimphu,BT,27.47,89.64;Ouagadougou,BF,12.37,-1.53;Sarajevo,BA,43.85,18.38;Kaohsiung,TW,22.63,120.27;Wellington,NZ,-41.29,174.78;Christchurch,NZ,-43.54,172.63;Kigali,RW,-1.95,30.06;Pago Pago,AS,-14.28,-170.71;Kingstown,VC,13.16,-61.22;Castries,LC,14.01,-60.99;Basseterre,KN,17.30,-62.72;Las Palmas,ES,28.10,-15.43;Berbera,-9,10.44,45.02;Port Louis,MU,-20.17,57.50;Gaza,PS,31.53,34.45;Saint George's,GD,12.05,-61.74;Papeete,PF,-17.53,-149.57;Manama,BH,26.24,50.58;Freeport,BS,26.53,-78.70;Saint John's,AG,17.12,-61.85;San Bernardino,US,34.12,-117.30;Bridgeport,US,41.18,-73.20;Rochester,US,43.17,-77.62;Xiamen,CN,24.45,118.08;Nanchong,CN,30.78,106.13;Neijiang,CN,29.58,105.05;Nanyang,CN,33.00,112.53;Jinxi,CN,40.75,120.83;Yantai,CN,37.53,121.40;Zaozhuang,CN,34.88,117.57;Suzhou,CN,31.30,120.62;Xuzhou,CN,34.28,117.18;Wuxi,CN,31.58,120.30;Jilin,CN,43.85,126.55;Chandigarh,IN,30.72,76.78;Jammu,IN,32.71,74.84;Sholapur,IN,17.67,75.90;Aurangabad,IN,19.86,75.33;Nasik,IN,20.00,73.78;Dispur,IN,26.14,91.77;Jullundur,IN,31.34,75.57;Allahabad,IN,25.46,81.84;Moradabad,IN,28.84,78.75;Ghaziabad,IN,28.66,77.41;Agra,IN,27.17,78.01;Aligarh,IN,27.89,78.06;Meerut,IN,29.00,77.70;Dhanbad,IN,23.80,86.42;Gwalior,IN,26.20,78.17;Vadodara,IN,22.31,73.18;Rajkot,IN,22.31,70.80;International Falls,US,48.60,-93.41;St. Paul,US,44.94,-93.08;Billings,US,45.79,-108.54;Great Falls,US,47.50,-111.30;Missoula,US,46.87,-113.99;Minot,US,48.23,-101.30;Fargo,US,46.88,-96.79;Hilo,US,19.71,-155.08;Olympia,US,47.04,-122.90;Spokane,US,47.67,-117.42;Vancouver,US,45.63,-122.64;Flagstaff,US,35.20,-111.65;Tucson,US,32.21,-110.89;Santa Barbara,US,34.41,-119.72;Fresno,US,36.75,-119.77;Eureka,US,40.79,-124.15;Colorado Springs,US,38.86,-104.79;Reno,US,39.53,-119.82;Elko,US,40.83,-115.76;Albuquerque,US,35.10,-106.64;Salem,US,44.93,-123.02;Casper,US,42.85,-106.32;Topeka,US,39.05,-95.67;Kansas City,US,39.11,-94.61;Tulsa,US,36.12,-95.93;Sioux Falls,US,43.55,-96.73;Shreveport,US,32.50,-93.77;Baton Rouge,US,30.46,-91.14;Ft. Worth,US,32.74,-97.34;Corpus Christi,US,27.74,-97.40;Austin,US,30.27,-97.74;Amarillo,US,35.23,-101.83;El Paso,US,31.78,-106.51;Laredo,US,27.51,-99.51;Burlington,US,44.48,-73.21;Montgomery,US,32.36,-86.28;Tallahassee,US,30.45,-84.28;Orlando,US,28.51,-81.38;Jacksonville,US,30.33,-81.67;Savannah,US,32.02,-81.11;Columbia,US,34.00,-81.03;Indianapolis,US,39.75,-86.17;Wilmington,US,34.23,-77.95;Knoxville,US,35.97,-83.92;Richmond,US,37.55,-77.45;Charleston,US,38.35,-81.63;Baltimore,US,39.28,-76.61;Syracuse,US,43.05,-76.15;Augusta,US,44.31,-69.78;Sault Ste. Marie,US,46.50,-84.35;Sitka,US,57.06,-135.33;Ternate,ID,0.79,127.36;Ambon,ID,-3.72,128.20;Raba,ID,-8.45,118.77;Jayapura,ID,-2.53,140.70;Banda Aceh,ID,5.55,95.32;Zhangye,CN,38.93,100.45;Wuwei,CN,37.93,102.64;Dunhuang,CN,40.14,94.66;Tianshui,CN,34.60,105.92;Dulan,CN,36.17,98.27;Golmud,CN,36.42,94.88;Yulin,CN,22.63,110.15;Bose,CN,23.90,106.61;Wuzhou,CN,23.48,111.32;Liupanshui,CN,26.60,104.83;Quanzhou,CN,24.90,118.58;Hefei,CN,31.85,117.28;Zhanjiang,CN,21.20,110.38;Shaoguan,CN,24.80,113.58;Balikpapan,ID,-1.25,116.83;Surakarta,ID,-7.56,110.83;Bandar Lampung,ID,-5.43,105.27;Tanjungpandan,ID,-2.75,107.65;Malang,ID,-7.98,112.61;Kupang,ID,-10.18,123.58;Parepare,ID,-4.02,119.63;Xigaze,CN,29.25,88.88;Shache,CN,38.43,77.25;Yining,CN,43.90,81.35;Altay,CN,47.87,88.12;Shizuishan,CN,39.23,106.77;Ankang,CN,32.68,109.02;Houma,CN,35.62,111.21;Yueyang,CN,29.38,113.10;Hengyang,CN,26.88,112.59;Mianyang,CN,31.46,104.69;Xichang,CN,27.88,102.30;Baoshan,CN,25.12,99.15;Gejiu,CN,23.38,103.15;Shijiazhuang,CN,38.05,114.48;Handan,CN,36.58,114.48;Anshan,CN,41.12,122.94;Dalian,CN,38.92,121.63;Qingdao,CN,36.09,120.33;Linyi,CN,35.08,118.33;Huaiyin,CN,33.59,119.07;Wenzhou,CN,28.02,120.65;Ningbo,CN,29.88,121.55;Gorontalo,ID,0.55,123.07;Tongliao,CN,43.62,122.27;Hohhot,CN,40.82,111.66;Chifeng,CN,42.27,118.95;Ulanhot,CN,46.08,122.08;Hailar,CN,49.20,119.70;Jiamusi,CN,46.83,130.35;Beian,CN,48.25,126.53;Daqing,CN,46.58,125.00;Jixi,CN,45.30,130.97;Faridabad,IN,28.44,77.31;Srinagar,IN,34.07,74.83;Vijayawada,IN,16.52,80.63;Thiruvananthapuram,IN,8.52,76.93;Kochi,IN,10.02,76.22;Cuttack,IN,20.47,85.89;Hubballi,IN,15.36,75.12;Mangaluru,IN,12.90,74.85;Mysuru,IN,12.31,76.66;Kalaburagi,IN,17.35,76.82;Kolhapur,IN,16.70,74.22;Nanded,IN,19.20,77.31;Akola,IN,20.71,77.01;Guwahati,IN,26.16,91.77;Ludhiana,IN,30.93,75.87;Kota,IN,25.18,75.83;Jodhpur,IN,26.29,73.01;Lucknow,IN,26.86,80.91;Saharanpur,IN,29.97,77.55;Ranchi,IN,23.37,85.33;Bhagalpur,IN,25.23,86.98;Raipur,IN,21.24,81.63;Jabalpur,IN,23.18,79.95;Indore,IN,22.72,75.86";
+  var CITIES = CITY_BLOB.split(";").map(function(r){
+    var f = r.split(",");
+    return { name:f[0], cc:f[1], lat:+f[2], lon:+f[3] };
+  });
+
+  var RAD2 = Math.PI/180;
+  function angDist(a1, o1, a2, o2){
+    var s = Math.sin(a1*RAD2)*Math.sin(a2*RAD2)
+          + Math.cos(a1*RAD2)*Math.cos(a2*RAD2)*Math.cos((o2-o1)*RAD2);
+    return Math.acos(Math.max(-1, Math.min(1, s)))/RAD2;
+  }
+  function nearestCity(lat, lon){
+    var best=null, bd=Infinity;
+    for (var i=0;i<CITIES.length;i++){
+      var c=CITIES[i];
+      /* cheap reject before the trig */
+      if (Math.abs(c.lat-lat) > 6) continue;
+      var d = angDist(lat, lon, c.lat, c.lon);
+      if (d < bd){ bd=d; best=c; }
+    }
+    return (best && bd <= 3.2) ? best : null;
+  }
+  function kmBetween(a, b){ return angDist(a.lat, a.lon, b.lat, b.lon) * RAD2 * 6371; }
+
+  var BA  = { name:"BUENOS AIRES", sub:"EZE", lat:-34.61, lon:-58.38 };
+  var AUS = { name:"AUSTIN",       sub:"AUS", lat: 30.27, lon:-97.74 };
+  var SEL = { name:"SEOUL",        sub:"ICN", lat: 37.57, lon:126.98 };
+  var svg = document.getElementById("globe");
+  var CX = 145, CY = 123, R = 92;
+
+  function toVec(lat, lon){
+    var p=lat*RAD, l=lon*RAD;
+    return [Math.cos(p)*Math.cos(l), Math.cos(p)*Math.sin(l), Math.sin(p)];
+  }
+  function slerpBetween(p, q, t){
+    var v1=toVec(p.lat,p.lon), v2=toVec(q.lat,q.lon);
+    var dot = Math.max(-1, Math.min(1, v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2]));
+    var om = Math.acos(dot);
+    if (om < 1e-6) return { lat:p.lat, lon:p.lon };
+    var s=Math.sin(om), a=Math.sin((1-t)*om)/s, b=Math.sin(t*om)/s;
+    var v=[v1[0]*a+v2[0]*b, v1[1]*a+v2[1]*b, v1[2]*a+v2[2]*b];
+    return { lat: Math.asin(v[2])/RAD, lon: Math.atan2(v[1], v[0])/RAD };
+  }
+
+  var cam = { lat: BA.lat*0.55, lon: BA.lon };
+  function project(lat, lon, alt){
+    var p=lat*RAD, l=lon*RAD, p0=cam.lat*RAD, l0=cam.lon*RAD, dl=l-l0;
+    var cp=Math.cos(p), sp=Math.sin(p), cp0=Math.cos(p0), sp0=Math.sin(p0), cdl=Math.cos(dl);
+    var r=R*(alt||1);
+    return { x: CX + r*(cp*Math.sin(dl)), y: CY - r*(cp0*sp - sp0*cp*cdl), z: sp0*sp + cp0*cp*cdl };
+  }
+  /* screen point back to lat/lon, null if the click missed the disc */
+  function unproject(sx, sy){
+    var x=(sx-CX)/R, y=-(sy-CY)/R;
+    var rho2 = x*x + y*y;
+    if (rho2 > 1) return null;
+    var z = Math.sqrt(1-rho2);
+    var p0=cam.lat*RAD, sp0=Math.sin(p0), cp0=Math.cos(p0);
+    var lat = Math.asin(z*sp0 + y*cp0)/RAD;
+    var lon = cam.lon + Math.atan2(x, z*cp0 - y*sp0)/RAD;
+    while (lon > 180) lon -= 360;
+    while (lon < -180) lon += 360;
+    return { lat:lat, lon:lon };
+  }
+
+  function hash(n){ var x = Math.sin(n*127.1)*43758.5453; return x - Math.floor(x); }
+  function vnoise(x, seed){
+    var i=Math.floor(x), f=x-i;
+    var a=hash(i+seed*7.31), b=hash(i+1+seed*7.31), u=f*f*(3-2*f);
+    return (a + (b-a)*u) - 0.5;
+  }
+  function linePath(p){
+    var d=""; for (var i=0;i<p.length;i++) d += (i?"L":"M") + p[i].x.toFixed(1) + " " + p[i].y.toFixed(1);
+    return d;
+  }
+  function curvePath(p){
+    var n=p.length; if (n<3) return linePath(p);
+    var d = "M"+p[0].x.toFixed(1)+" "+p[0].y.toFixed(1);
+    for (var i=1;i<n-1;i++){
+      d += "Q"+p[i].x.toFixed(1)+" "+p[i].y.toFixed(1)+" "
+         + ((p[i].x+p[i+1].x)/2).toFixed(1)+" "+((p[i].y+p[i+1].y)/2).toFixed(1);
+    }
+    return d + "L"+p[n-1].x.toFixed(1)+" "+p[n-1].y.toFixed(1);
+  }
+  function emitRun(run, seed, amp, smooth, wl){
+    var n=run.length; if (n<2) return "";
+    var W1 = wl || 15, W2 = W1/2.7;
+    var pts=[], s=0;
+    for (var i=0;i<n;i++){
+      var p=run[i], a=run[i>0?i-1:0], b=run[i<n-1?i+1:n-1];
+      var tx=b.x-a.x, ty=b.y-a.y, L=Math.hypot(tx,ty)||1;
+      if (i>0) s += Math.hypot(p.x-run[i-1].x, p.y-run[i-1].y);
+      var w = amp*(vnoise(s/W1+seed, seed) + 0.45*vnoise(s/W2+seed, seed+3.7));
+      pts.push({ x: p.x - ty/L*w, y: p.y + tx/L*w });
+    }
+    return smooth ? curvePath(pts) : linePath(pts);
+  }
+  function sketch(pts, alt, seed, amp, smooth){
+    var d="", run=[];
+    for (var i=0;i<pts.length;i++){
+      var q = project(pts[i][0], pts[i][1], alt);
+      if (q.z > 0) run.push(q);
+      else { d += emitRun(run, seed, amp, smooth); run=[]; }
+    }
+    return d + emitRun(run, seed, amp, smooth);
+  }
+
+  var meridians=[], parallels=[];
+  for (var lon=-180; lon<180; lon+=60){
+    var m=[]; for (var la=-90; la<=90; la+=4) m.push([la, lon]); meridians.push(m);
+  }
+  [-30,0,30].forEach(function(lat){
+    var p=[]; for (var lo=-180; lo<=180; lo+=4) p.push([lat, lo]); parallels.push(p);
+  });
+  var limbDeg=[]; for (var a=-8; a<=368; a+=3) limbDeg.push(a);
+  function limbPath(seed, amp){
+    return emitRun(limbDeg.map(function(deg){
+      var r=deg*RAD; return { x: CX + R*Math.cos(r), y: CY + R*Math.sin(r) };
+    }), seed, amp, false);
+  }
+
+  function el(tag, attrs){
+    var n=document.createElementNS(NS, tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  var gratEl = el("path",{class:"grat"}); svg.appendChild(gratEl);
+  var limbA = el("path",{class:"limb"}), limbB = el("path",{class:"limb2"});
+  svg.appendChild(limbA); svg.appendChild(limbB);
+  var coastGhostEl = el("path",{class:"coast-ghost"}); svg.appendChild(coastGhostEl);
+  var coastEl = el("path",{class:"coast"}); svg.appendChild(coastEl);
+  var pastEl = el("path",{class:"trail-past"}); svg.appendChild(pastEl);
+  var trailEl = el("path",{class:"trail"}); svg.appendChild(trailEl);
+  var dotsEl = el("g",{}); svg.appendChild(dotsEl);
+
+  function makePin(){
+    var g=el("g",{}), c=el("circle",{class:"pin", r:2.8});
+    var t1=el("text",{class:"city"}), t2=el("text",{class:"city-sub"});
+    g.appendChild(c); g.appendChild(t1); g.appendChild(t2); svg.appendChild(g);
+    return { g:g, c:c, t1:t1, t2:t2 };
+  }
+  var pinA = makePin(), pinB = makePin();
+  var planeG = el("g",{});
+  planeG.appendChild(el("path",{ class:"plane",
+    d:"M0 -8 L1.7 -2.4 L8 1.2 L8 2.7 L1.7 1.6 L1.1 5.5 L3.5 7.3 L3.5 8.5 L0 7.5 L-3.5 8.5 L-3.5 7.3 L-1.1 5.5 L-1.7 1.6 L-8 2.7 L-8 1.2 L-1.7 -2.4 Z" }));
+  svg.appendChild(planeG);
+
+  /* ---------- flight state ---------- */
+  function place(lat, lon, name, sub){ return { lat:lat, lon:lon, name:name, sub:sub }; }
+  var legs = [];                    /* completed { a, b } */
+  var visited = [ place(BA.lat, BA.lon, BA.name, BA.sub) ];
+  var flight = null;                /* { a, b, t, dur } */
+  var planeAt = place(BA.lat, BA.lon, BA.name, BA.sub);
+  var lastLeg = null;
+  var totalKm = 0;
+  var camTarget = null, camFrom = null, camT = 1;
+
+  function clamp01(x){ return x<0?0:x>1?1:x; }
+  function easeInOut(x){ return x<.5 ? 4*x*x*x : 1 - Math.pow(-2*x+2,3)/2; }
+  function altitude(f){ return 1 + 0.115*Math.pow(Math.sin(Math.PI*clamp01(f)), 0.62); }
+
+  function flyTo(dest){
+    var from = planeAt;
+    if (flight){
+      /* interrupted mid-air: bank only the distance actually flown */
+      var cur = slerpBetween(flight.a, flight.b, easeInOut(flight.t));
+      var stop = place(cur.lat, cur.lon, "", "");
+      legs.push({ a:flight.a, b:stop });
+      totalKm += kmBetween(flight.a, stop);
+      from = stop;
+    }
+    var a = place(from.lat, from.lon, planeAt.name, planeAt.sub);
+    var deg = angDist(a.lat, a.lon, dest.lat, dest.lon);
+    flight = { a:a, b:dest, t:0, dur: 850 + 2400*(deg/180) };
+    camFrom = { lat:cam.lat, lon:cam.lon };
+    camTarget = { lat: dest.lat*0.62, lon: dest.lon };
+    camT = 0;
+    drift = false;
+    /* the intro flight keeps the hint on screen; the readout is for flights you chose */
+    if (userTouched) setDest(dest, kmBetween(a, dest));
+  }
+  /* the opening itinerary: born there, live here, going there in the fall */
+  var itinerary = [];
+
+  function finishFlight(){
+    legs.push({ a:flight.a, b:flight.b });
+    lastLeg = { a:flight.a, b:flight.b };
+    totalKm += kmBetween(flight.a, flight.b);
+    visited.push(flight.b);
+    planeAt = flight.b;
+    flight = null;
+    updateReadout();
+    if (itinerary.length && !userTouched){
+      var next = itinerary.shift();
+      setTimeout(function(){ if (!userTouched) flyTo(next); }, 900);
+    }
+  }
+
+  /* ---------- readout ---------- */
+  var destEl = document.getElementById("dest");
+  var flightsEl = document.getElementById("n-flights");
+  var kmEl = document.getElementById("n-km");
+  function fmtKm(n){ return Math.round(n).toLocaleString("en-US"); }
+  function setDest(d, km){
+    if (!destEl) return;
+    var label = d.sub ? d.name : d.name;
+    destEl.innerHTML = '<span class="arrow">&rarr;</span> ' + label +
+      ' <span class="dim">' + fmtKm(km) + ' km</span>';
+    destEl.classList.add("on");
+  }
+  function updateReadout(){
+    if (flightsEl) flightsEl.textContent = legs.length;
+    if (kmEl) kmEl.textContent = fmtKm(totalKm);
+  }
+
+  /* ---------- render ---------- */
+  function arcPath(a, b, upTo){
+    var d="", run=[], N=64;
+    var steps = Math.max(1, Math.round(N*clamp01(upTo === undefined ? 1 : upTo)));
+    for (var i=0;i<=steps;i++){
+      var f=i/N, p=slerpBetween(a, b, f);
+      if (project(p.lat, p.lon, 1).z > 0) run.push(project(p.lat, p.lon, altitude(f)));
+      else { d += emitRun(run, 3.1, 0.6, false); run=[]; }
+    }
+    return d + emitRun(run, 3.1, 0.6, false);
+  }
+  function placePin(pin, p, live){
+    if (!p){ pin.g.setAttribute("opacity", 0); return; }
+    var q=project(p.lat, p.lon, 1);
+    if (q.z<=0){ pin.g.setAttribute("opacity",0); return; }
+    pin.g.setAttribute("opacity", Math.min(1,q.z*3.2).toFixed(2));
+    pin.c.setAttribute("cx", q.x.toFixed(1)); pin.c.setAttribute("cy", q.y.toFixed(1));
+    pin.c.setAttribute("class", live ? "pin pin-live" : "pin");
+    var right = q.x < CX + R*0.35, dx = right ? 7 : -7, anchor = right ? "start" : "end";
+    pin.t1.textContent = p.name;
+    pin.t2.textContent = p.sub || "";
+    pin.t1.setAttribute("x",(q.x+dx).toFixed(1)); pin.t1.setAttribute("y",(q.y-1).toFixed(1));
+    pin.t1.setAttribute("text-anchor",anchor);
+    pin.t2.setAttribute("x",(q.x+dx).toFixed(1)); pin.t2.setAttribute("y",(q.y+7).toFixed(1));
+    pin.t2.setAttribute("text-anchor",anchor);
+  }
+
+  function renderGlobe(){
+    var dg="";
+    for (var i=0;i<meridians.length;i++) dg += sketch(meridians[i],1,i*1.7,2.6,true);
+    for (var j=0;j<parallels.length;j++) dg += sketch(parallels[j],1,40+j*2.3,2.6,true);
+    gratEl.setAttribute("d",dg);
+
+    var dc="", dgh="";
+    for (var k=0;k<COASTS.length;k++){
+      dc  += sketch(COASTS[k],1.004,100+k*1.9,3.2,true);
+      dgh += sketch(COASTS[k],1.004,500+k*3.1,4.0,true);
+    }
+    coastEl.setAttribute("d",dc); coastGhostEl.setAttribute("d",dgh);
+    limbA.setAttribute("d", limbPath(7.7,3.9));
+    limbB.setAttribute("d", limbPath(21.3,5.4));
+
+    /* every completed leg stays on the globe, the flight log is the drawing */
+    var dp="";
+    for (var g=0; g<legs.length; g++) dp += arcPath(legs[g].a, legs[g].b, 1);
+    pastEl.setAttribute("d", dp);
+
+    if (flight){
+      var f = easeInOut(flight.t);
+      trailEl.setAttribute("d", arcPath(flight.a, flight.b, f));
+      var here = slerpBetween(flight.a, flight.b, f);
+      var ahead = slerpBetween(flight.a, flight.b, Math.min(1, f+0.012));
+      var pNow = project(here.lat, here.lon, altitude(f));
+      var pNext = project(ahead.lat, ahead.lon, altitude(Math.min(1,f+0.012)));
+      var onFace = project(here.lat, here.lon, 1).z > 0;
+      planeG.setAttribute("opacity", onFace?1:0);
+      if (onFace){
+        var ang = Math.atan2(pNext.y-pNow.y, pNext.x-pNow.x)/RAD + 90;
+        planeG.setAttribute("transform","translate("+pNow.x.toFixed(1)+","+pNow.y.toFixed(1)+") rotate("+ang.toFixed(1)+") scale(.55)");
+      }
+      placePin(pinA, flight.a, false);
+      placePin(pinB, flight.b, false);
+    } else {
+      trailEl.setAttribute("d","");
+      var q = project(planeAt.lat, planeAt.lon, 1);
+      planeG.setAttribute("opacity", q.z>0 ? 1 : 0);
+      if (q.z>0) planeG.setAttribute("transform","translate("+q.x.toFixed(1)+","+q.y.toFixed(1)+") rotate(0) scale(.5)");
+      placePin(pinA, lastLeg ? lastLeg.a : place(BA.lat,BA.lon,BA.name,BA.sub), false);
+      placePin(pinB, planeAt, true);
+    }
+
+    /* small dots for everywhere already visited */
+    while (dotsEl.firstChild) dotsEl.removeChild(dotsEl.firstChild);
+    for (var v=0; v<visited.length; v++){
+      var vp = project(visited[v].lat, visited[v].lon, 1);
+      if (vp.z <= 0) continue;
+      dotsEl.appendChild(el("circle", { class:"visited", cx:vp.x.toFixed(1), cy:vp.y.toFixed(1), r:1.7 }));
+    }
+  }
+
+  /* ---------- drag to spin ---------- */
+  var slot = document.querySelector(".globe-slot");
+  var coarse = matchMedia("(pointer: coarse)").matches;
+  var dragging=false, lastPt=null, vLon=0, vLat=0, drift=true, userTouched=false;
+  var hint = document.getElementById("globe-hint");
+
+  function svgScale(){ return svg.getBoundingClientRect().width / 290; }
+  function localPt(e){
+    var b = svg.getBoundingClientRect(), s = svgScale();
+    return { x:(e.clientX-b.left)/s, y:(e.clientY-b.top)/s };
+  }
+  function markTouched(){
+    if (userTouched) return;
+    userTouched = true; drift = false;
+    itinerary.length = 0;          /* your globe now, not mine */
+    if (hint) hint.classList.add("gone");
+  }
+
+  svg.addEventListener("pointerdown", function(e){
+    dragging = true; lastPt = { x:e.clientX, y:e.clientY };
+    vLon = vLat = 0;
+    svg.setPointerCapture(e.pointerId);
+    slot.classList.add("grabbing");
+  });
+  svg.addEventListener("pointermove", function(e){
+    if (!dragging) return;
+    var dx = e.clientX - lastPt.x, dy = e.clientY - lastPt.y;
+    if (!userTouched && Math.hypot(dx,dy) > 3) markTouched();
+    var s = svgScale(), k = 0.58 / (s || 1);
+    vLon = -dx*k;
+    vLat = coarse ? 0 : dy*k;      /* touch keeps vertical for page scroll */
+    cam.lon += vLon;
+    cam.lat = Math.max(-78, Math.min(78, cam.lat + vLat));
+    lastPt = { x:e.clientX, y:e.clientY };
+  });
+  function endDrag(){
+    if (!dragging) return;
+    dragging = false;
+    slot.classList.remove("grabbing");
+  }
+  svg.addEventListener("pointerup", endDrag);
+  svg.addEventListener("pointercancel", endDrag);
+
+  /* ---------- double-click / double-tap to fly ---------- */
+  function flyToScreen(clientX, clientY){
+    var b = svg.getBoundingClientRect(), s = svgScale();
+    var hit = unproject((clientX-b.left)/s, (clientY-b.top)/s);
+    if (!hit) return;
+    markTouched();
+    var c = nearestCity(hit.lat, hit.lon);
+    var dest = c
+      ? place(c.lat, c.lon, c.name.toUpperCase(), c.cc)
+      : place(hit.lat, hit.lon,
+              Math.abs(hit.lat).toFixed(1) + "\u00b0" + (hit.lat>=0?"N":"S") + " " +
+              Math.abs(hit.lon).toFixed(1) + "\u00b0" + (hit.lon>=0?"E":"W"),
+              "OPEN WATER");
+    flyTo(dest);
+  }
+  svg.addEventListener("dblclick", function(e){ e.preventDefault(); flyToScreen(e.clientX, e.clientY); });
+  var lastTap = 0, lastTapPt = null;
+  svg.addEventListener("pointerup", function(e){
+    if (e.pointerType !== "touch") return;
+    var now = performance.now();
+    if (now - lastTap < 320 && lastTapPt &&
+        Math.hypot(e.clientX-lastTapPt.x, e.clientY-lastTapPt.y) < 22){
+      flyToScreen(e.clientX, e.clientY);
+      lastTap = 0;
+    } else {
+      lastTap = now; lastTapPt = { x:e.clientX, y:e.clientY };
+    }
+  });
+
+  var homeBtn = document.getElementById("fly-home");
+  if (homeBtn) homeBtn.addEventListener("click", function(){
+    markTouched();
+    flyTo(place(AUS.lat, AUS.lon, AUS.name, AUS.sub));
+  });
+  var clearBtn = document.getElementById("clear-log");
+  if (clearBtn) clearBtn.addEventListener("click", function(){
+    legs = []; totalKm = 0; lastLeg = null;
+    visited = [ place(planeAt.lat, planeAt.lon, planeAt.name, planeAt.sub) ];
+    if (destEl) destEl.classList.remove("on");
+    updateReadout();
+  });
+
+  /* ---------- loop ---------- */
+  var running=false, prev=null, ticks=0;
+  /* the underline is scroll-driven now (see updateUnderline); it just needs arming */
+  var ul = document.getElementById("ul");
+  ul.style.strokeDasharray = ul.getTotalLength();
+  ul.style.strokeDashoffset = reduce ? 0 : ul.getTotalLength();
+
+  function frame(ts){
+    var dt = prev === null ? 16 : Math.min(48, ts - prev);
+    prev = ts; ticks += dt/1000;
+
+    if (flight){
+      flight.t = Math.min(1, flight.t + dt/flight.dur);
+      if (camT < 1){
+        camT = Math.min(1, camT + dt/(flight.dur*0.95));
+        var e2 = easeInOut(camT);
+        var dlon = ((camTarget.lon - camFrom.lon + 540) % 360) - 180;
+        cam.lon = camFrom.lon + dlon*e2;
+        cam.lat = camFrom.lat + (camTarget.lat - camFrom.lat)*e2;
+      }
+      if (flight.t >= 1){
+        finishFlight();
+      }
+    } else if (!dragging){
+      if (Math.abs(vLon) > 0.01 || Math.abs(vLat) > 0.01){
+        cam.lon += vLon; cam.lat = Math.max(-78, Math.min(78, cam.lat + vLat));
+        vLon *= 0.94; vLat *= 0.94;                 /* inertia */
+      } else if (drift){
+        cam.lon += 0.035; cam.lat += Math.sin(ticks*0.21)*0.012;
+      }
+    }
+    renderGlobe();
+    if (running) requestAnimationFrame(frame);
+  }
+
+  new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (e.isIntersecting && !running){ running=true; prev=null; requestAnimationFrame(frame); }
+      else if (!e.isIntersecting){ running=false; }
+    });
+  },{threshold:0.05}).observe(svg);
+
+  updateReadout();
+  renderGlobe();
+  var pBA  = place(BA.lat,  BA.lon,  BA.name,  BA.sub);
+  var pAUS = place(AUS.lat, AUS.lon, AUS.name, AUS.sub);
+  var pSEL = place(SEL.lat, SEL.lon, SEL.name, SEL.sub);
+
+  if (reduce){
+    /* no motion: land the whole itinerary already flown */
+    legs.push({ a:pBA, b:pAUS }, { a:pAUS, b:pSEL });
+    totalKm = kmBetween(pBA, pAUS) + kmBetween(pAUS, pSEL);
+    visited.push(pAUS, pSEL);
+    planeAt = pSEL; lastLeg = legs[1];
+    cam.lat = SEL.lat*0.62; cam.lon = SEL.lon;
+    drift=false; updateReadout(); renderGlobe();
+  } else {
+    itinerary = [pSEL];
+    setTimeout(function(){ flyTo(pAUS); drift = true; }, 420);
+  }
+
+  /* ===================== section rules + scratch underlines ===================== */
+  function armDraw(path, dur){
+    var len = path.getTotalLength();
+    path.style.strokeDasharray = len;
+    path.style.strokeDashoffset = reduce ? 0 : len;
+    return function(){
+      path.style.transition = "stroke-dashoffset " + dur + " cubic-bezier(.62,0,.35,1)";
+      path.style.strokeDashoffset = 0;
+    };
+  }
+  var ruleObserver = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (e.isIntersecting){ e.target._draw(); ruleObserver.unobserve(e.target); }
+    });
+  }, { threshold: 0.9 });
+  document.querySelectorAll(".hd .rule path").forEach(function(p){
+    p._draw = armDraw(p, ".7s");
+    ruleObserver.observe(p);
+  });
+  /* project scratches sit at full dash until hover/focus; CSS drives them */
+  document.querySelectorAll(".row-name .scratch path").forEach(function(p){
+    p.style.setProperty("--l", p.getTotalLength());
+  });
+
+  /* ===================== the wire ===================== */
+  var wire = document.getElementById("wire");
+  var page = document.querySelector(".page");
+  var lineEl = document.createElementNS(NS,"path");
+  lineEl.setAttribute("class","line"); wire.appendChild(lineEl);
+
+  /* the plane rides the leading tip of the wire: out of the spiral, down the page */
+  var wirePlane = document.createElementNS(NS,"g");
+  wirePlane.setAttribute("class","wire-plane");
+  wirePlane.setAttribute("opacity","0");
+  var wpPath = document.createElementNS(NS,"path");
+  wpPath.setAttribute("d","M0 -8 L1.7 -2.4 L8 1.2 L8 2.7 L1.7 1.6 L1.1 5.5 L3.5 7.3 L3.5 8.5 L0 7.5 L-3.5 8.5 L-3.5 7.3 L-1.1 5.5 L-1.7 1.6 L-8 2.7 L-8 1.2 L-1.7 -2.4 Z");
+  wirePlane.appendChild(wpPath);
+  wire.appendChild(wirePlane);
+  var anchors = [].slice.call(document.querySelectorAll("[data-anchor]"));
+  var nodeEls = [], hitEls = [], labelEls = [];
+  anchors.slice(1).forEach(function(sec){
+    var h = sec.querySelector(".hd h2");
+    var name = h ? h.textContent.trim() : "";
+    var c = document.createElementNS(NS,"circle");
+    c.setAttribute("class","node"); c.setAttribute("r","3.4");
+    wire.appendChild(c); nodeEls.push(c);
+
+    var lab = document.createElementNS(NS,"text");
+    lab.setAttribute("class","nlabel"); lab.textContent = name;
+    /* a fat invisible target: the visible dot is 7px, the tap area is 44 */
+    var hit = document.createElementNS(NS,"circle");
+    hit.setAttribute("class","hit"); hit.setAttribute("r","22");
+    hit.setAttribute("tabindex","0"); hit.setAttribute("role","link");
+    hit.setAttribute("aria-label","Jump to " + name);
+    wire.appendChild(hit); wire.appendChild(lab);
+    hitEls.push(hit); labelEls.push(lab);
+
+    function jump(){ sec.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block:"start" }); }
+    hit.addEventListener("click", jump);
+    hit.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " "){ e.preventDefault(); jump(); }
+    });
+  });
+
+  var wireTop = 0, wireBottom = 0;
+
+  /* drop the placeholder rule until it sits level with the Elsewhere node */
+  function alignFakeRule(box){
+    var li = document.querySelector(".now-list li[data-fake]");
+    if (!li) return;
+    var node = nodeEls[nodeEls.length - 1];
+    if (!node) return;
+    var liBottom = li.getBoundingClientRect().bottom - box.top;
+    var drop = +node.getAttribute("cy") - liBottom;
+    li.style.setProperty("--fake-drop", Math.max(0, Math.round(drop)) + "px");
+  }
+
+  function layoutWire(){
+    var box = page.getBoundingClientRect();
+    var w = box.width, h = page.offsetHeight;
+    wire.setAttribute("viewBox", "0 0 " + w + " " + h);
+    wire.setAttribute("width", w); wire.setAttribute("height", h);
+
+    var padLeft = parseFloat(getComputedStyle(page).paddingLeft);
+    var gut = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--gutter"));
+    var x = padLeft + gut/2;
+
+    /* The line is born as a spiral beside the first section, winds outward, and
+       leaves travelling straight down. Ending on a whole number of turns is what
+       makes the exit tangent vertical, anything else and it leaves at an angle. */
+    /* never let the coil reach the page edge, on a 390px screen the gutter is tight */
+    var rEnd = Math.max(9, Math.min(17, (x - 14)/2));
+    var TURNS = 3, r0 = 1.2;
+    var k = (rEnd - r0) / (Math.PI*2*TURNS);
+    /* centred on the first section's heading, so it reads as the line starting there */
+    var hd = anchors[1].querySelector(".hd").getBoundingClientRect();
+    var cx = x - rEnd, cy = hd.top - box.top + hd.height/2;
+
+    var pts = [];
+    for (var th = 0; th <= Math.PI*2*TURNS + 0.0001; th += 0.11){
+      var r = r0 + k*th;
+      pts.push({ x: cx + r*Math.cos(th), y: cy + r*Math.sin(th) });
+    }
+
+    /* then straight down the gutter, sampled loosely so the wobble can breathe */
+    var endY = h - 78;
+    for (var y = cy + 20; y <= endY; y += 26) pts.push({ x: x, y: y });
+    pts.push({ x: x, y: endY });
+
+    lineEl.setAttribute("d", emitRun(pts, 5.3, 1.1, true, 70));
+
+    anchors.slice(1).forEach(function(sec, i){
+      var ny = sec.getBoundingClientRect().top - box.top + 30;
+      nodeEls[i].setAttribute("cx", x.toFixed(1));
+      nodeEls[i].setAttribute("cy", ny.toFixed(1));
+      hitEls[i].setAttribute("cx", x.toFixed(1));
+      hitEls[i].setAttribute("cy", ny.toFixed(1));
+      labelEls[i].setAttribute("x", (x + 13).toFixed(1));
+      labelEls[i].setAttribute("y", (ny + 3).toFixed(1));
+    });
+    /* the spiral occupies the first node's slot, no dot on top of it */
+    nodeEls[0].setAttribute("r", 0);
+
+    alignFakeRule(box);
+    wireTop = cy; wireBottom = endY;
+    var len = lineEl.getTotalLength();
+    lineEl.style.strokeDasharray = len;
+    lineEl.dataset.len = len;
+    onScroll();
+  }
+  /* the wordmark underline is bound to scroll, not to the clock: it draws as you
+     go down and unwrites itself, backwards, as you come back up */
+  var ulEl = document.getElementById("ul");
+  var ulLength = ulEl.getTotalLength();
+  var UL_RANGE = 170;                       /* px of scroll to complete the stroke */
+  function updateUnderline(){
+    if (reduce){ ulEl.style.strokeDashoffset = 0; return; }
+    var p = Math.max(0, Math.min(1, window.scrollY / UL_RANGE));
+    ulEl.style.strokeDashoffset = ulLength * (1 - p);
+  }
+
+  function onScroll(){
+    updateUnderline();
+    var len = +lineEl.dataset.len || 0;
+    if (reduce){
+      lineEl.style.strokeDashoffset = 0;
+      nodeEls.forEach(function(n){ n.setAttribute("opacity",1); });
+      wirePlane.setAttribute("opacity", 0);
+      return;
+    }
+    var box = page.getBoundingClientRect();
+    var reached = (window.innerHeight*0.62) - box.top;
+    /* progress measured across the wire's own span, not the whole page */
+    var p = Math.max(0, Math.min(1, (reached - wireTop) / Math.max(1, wireBottom - wireTop)));
+    lineEl.style.strokeDashoffset = len * (1 - p);
+    var drawnTo = wireTop + (wireBottom - wireTop) * p;
+    nodeEls.forEach(function(n){ n.setAttribute("opacity", drawnTo > +n.getAttribute("cy") ? 1 : 0); });
+
+    /* park the plane on the exact tip of the drawn portion */
+    if (p <= 0.001 || p >= 0.999 || len === 0){
+      wirePlane.setAttribute("opacity", 0);
+    } else {
+      var at = len * p;
+      var tip = lineEl.getPointAtLength(at);
+      var back = lineEl.getPointAtLength(Math.max(0, at - 3));
+      var ang = Math.atan2(tip.y - back.y, tip.x - back.x) * 180/Math.PI + 90;
+      wirePlane.setAttribute("opacity", 1);
+      wirePlane.setAttribute("transform",
+        "translate(" + tip.x.toFixed(1) + "," + tip.y.toFixed(1) + ") rotate(" + ang.toFixed(1) + ") scale(.5)");
+    }
+  }
+  layoutWire();
+  window.addEventListener("scroll", onScroll, { passive:true });
+  window.addEventListener("resize", layoutWire);
+  window.addEventListener("load", layoutWire);
+  setTimeout(layoutWire, 200);
+
+  /* ===================== local clock ===================== */
+  function clockFor(id, zone){
+    var node = document.getElementById(id);
+    if (!node) return function(){};
+    var fmt = new Intl.DateTimeFormat("en-US", { timeZone:zone, hour:"2-digit", minute:"2-digit", hour12:false });
+    return function(){ node.textContent = fmt.format(new Date()); };
+  }
+  /* the three cities the opening flight visits, in that order */
+  var ticks2 = [
+    clockFor("t-eze",   "America/Argentina/Buenos_Aires"),
+    clockFor("t-local", "America/Chicago"),
+    clockFor("t-seoul", "Asia/Seoul")
+  ];
+  function tick(){ ticks2.forEach(function(f){ f(); }); }
+  tick(); setInterval(tick, 20000);
+
+  /* ===================== magnetic wire nodes ===================== */
+  if (!reduce && matchMedia("(pointer:fine)").matches){
+    window.addEventListener("pointermove", function(e){
+      var box = page.getBoundingClientRect();
+      var px = e.clientX - box.left, py = e.clientY - box.top;
+      nodeEls.forEach(function(n){
+        var nx = +n.getAttribute("cx"), ny = +n.getAttribute("cy");
+        var dx = px - nx, dy = py - ny, dist = Math.hypot(dx, dy);
+        if (dist < 90){
+          var pull = (1 - dist/90) * 0.34;
+          n.setAttribute("transform", "translate(" + (dx*pull).toFixed(1) + "," + (dy*pull).toFixed(1) + ")");
+          n.classList.toggle("near", dist < 34);
+        } else if (n.getAttribute("transform")){
+          n.removeAttribute("transform"); n.classList.remove("near");
+        }
+      });
+    }, { passive:true });
+  }
+
+  /* ===================== the handwritten line writes itself ===================== */
+  (function(){
+    var sub = document.querySelector(".sub");
+    if (!sub || reduce) return;
+    sub.classList.add("armed");
+    onceWellInView(sub, function(){ sub.classList.add("written"); }, 0.8);
+  })();
+
+  /* ===================== essay pull-quotes ===================== */
+  document.querySelectorAll(".q-btn").forEach(function(btn){
+    var pull = document.getElementById(btn.getAttribute("aria-controls"));
+    btn.addEventListener("click", function(){
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      pull.classList.toggle("open", !open);
+    });
+  });
+
+
+  /* ===================== PayPal wordmark, and the man himself ===================== */
+  (function(){
+    var pp = document.getElementById("pp-mark");
+    if (!pp) return;
+
+    /* ---------------------------------------------------------------------
+       EASTER EGG ASSET. Drop the picture in here as a data URI, or as a path
+       beside the page in the real build ("/elon.png"). Left empty the egg is
+       inert: the click still parts the wordmark and nothing else happens, so
+       a missing file can never leave a broken image on the page.
+       --------------------------------------------------------------------- */
+    var EGG_SRC = "data:image/webp;base64,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";
+
+    var timer = null;
+    function part(){
+      pp.classList.add("parted");
+      clearTimeout(timer);
+      timer = setTimeout(function(){ pp.classList.remove("parted"); }, 620);
+    }
+    pp.addEventListener("pointerenter", function(e){
+      if (e.pointerType === "touch") return;
+      part();
+    });
+
+    /* Nothing is created, fetched or decoded until the first click. Most
+       visitors never trigger this, and they should never pay for it: no image
+       element in the document, no decode on load, no memory held. */
+    var egg = null, eggTimer = null;
+    function ensureEgg(){
+      if (egg || !EGG_SRC) return egg;
+      egg = new Image();
+      egg.className = "egg";
+      egg.alt = "";
+      egg.setAttribute("aria-hidden", "true");
+      egg.decoding = "async";
+      egg.src = EGG_SRC;
+      document.body.appendChild(egg);
+      return egg;
+    }
+    function popEgg(){
+      var e = ensureEgg();
+      if (!e) return;                       /* no asset set: click is simply inert */
+      /* clicking again while he is down resets the clock rather than yanking
+         him up and dropping him a second time */
+      requestAnimationFrame(function(){ e.classList.add("in"); });
+      clearTimeout(eggTimer);
+      eggTimer = setTimeout(function(){ e.classList.remove("in"); }, 2800);
+    }
+
+    pp.addEventListener("click", function(){ part(); popEgg(); });
+  })();
+
+  /* ===================== Klini wordmark: draws when seen, redraws on click ===================== */
+  (function(){
+    var mark = document.getElementById("klini-mark");
+    if (!mark) return;
+    var strokes = [].slice.call(mark.querySelectorAll(".kl-s, .kl-dot"));
+    if (reduce) return;   /* stays drawn, no motion, nothing to replay */
+
+    /* held from JS rather than CSS, so a no-JS visitor still gets the finished logo */
+    function hold(){ strokes.forEach(function(s){ s.style.animationPlayState = "paused"; }); }
+
+    /* The wordmark takes ~2.55s to draw. Retriggering mid-draw restarts it from
+       nothing, so a pointer crossing the logo a few times shreds it into a
+       stutter. Ignore every trigger until the current draw has finished. */
+    var DRAW_MS = 2600, drawing = false, drawTimer = null;
+    function play(){
+      if (drawing) return;
+      drawing = true;
+      /* kill the animation, force a reflow, hand it back, the standard restart,
+         and the only one that reliably replays a delayed CSS animation */
+      strokes.forEach(function(s){ s.style.animation = "none"; });
+      void mark.offsetWidth;
+      strokes.forEach(function(s){
+        s.style.animation = "";
+        s.style.animationPlayState = "running";
+      });
+      clearTimeout(drawTimer);
+      drawTimer = setTimeout(function(){ drawing = false; }, DRAW_MS);
+    }
+    hold();
+
+    onceWellInView(mark, play, 0.72);
+
+    /* Hover target is the wordmark itself, not the row. The row runs the full
+       width of the column, so hovering the date on the far right, or anywhere
+       on that line, was redrawing a logo the pointer never went near. */
+    if (matchMedia("(pointer:fine)").matches){
+      mark.addEventListener("pointerenter", function(e){
+        if (e.pointerType === "touch") return;
+        play();
+      });
+    }
+    var head = mark.closest(".row-head");
+    if (head) head.addEventListener("focus", play);   /* keyboard still gets it */
+  })();
+
+  /* ===================== Klini: the product, running ===================== */
+  (function(){
+    var box = document.getElementById("bubbles");
+    if (!box) return;
+    /* accents as \u escapes so the demo survives a server that forgets its charset */
+    var SCRIPT = [
+      { who:"them", text:"Hola, \u00bfcu\u00e1ndo tengo el turno de la vacuna?" },
+      { who:"us",   text:"El jueves 21 a las 10:30, en vacunatorio." },
+      { who:"them", text:"\u00bfLo puedo pasar a la tarde?" },
+      { who:"us",   text:"Listo, lo mov\u00ed al jueves 21 a las 16:00. Te confirmo por ac\u00e1." },
+      { who:"done", text:"Turno reprogramado \u00b7 jue 21 \u00b7 16:00" }
+    ];
+
+    /* build the whole conversation up front, invisible, the block is its final
+       height from the first paint, so nothing below it ever jumps */
+    var els = SCRIPT.map(function(line){
+      var b = document.createElement("div");
+      b.className = "bub " + line.who;
+      var t = document.createElement("span");
+      t.className = "txt"; t.textContent = line.text;
+      b.appendChild(t);
+      if (line.who === "us"){
+        var dots = document.createElement("span");
+        dots.className = "dots";
+        dots.innerHTML = "<i></i><i></i><i></i>";
+        b.appendChild(dots);
+      }
+      box.appendChild(b);
+      return b;
+    });
+
+    var timers = [];
+    function at(ms, fn){ timers.push(setTimeout(fn, ms)); }
+    function reset(){
+      timers.forEach(clearTimeout); timers = [];
+      els.forEach(function(b){ b.classList.remove("in", "pending"); });
+    }
+    function showAll(){ reset(); els.forEach(function(b){ b.classList.add("in"); }); }
+
+    /* one self-chaining timer, not N on a precomputed schedule: background tabs
+       clamp setTimeout, which reorders independent timers but cannot reorder a chain */
+    function run(){
+      reset();
+      var i = 0;
+      function next(){
+        if (i >= SCRIPT.length) return;
+        var line = SCRIPT[i], b = els[i]; i++;
+        if (line.who === "us"){
+          b.classList.add("in", "pending");
+          at(820, function(){ b.classList.remove("pending"); at(640, next); });
+        } else {
+          b.classList.add("in");
+          at(line.who === "done" ? 0 : 640, next);
+        }
+      }
+      at(320, next);
+    }
+
+    if (reduce){ showAll(); }
+    else { onceWellInView(box, run, 0.78); }
+    var cbtn = document.getElementById("chat-btn");
+    if (cbtn) cbtn.addEventListener("click", reduce ? showAll : run);
+  })();
+
+  /* ============ SellWant wordmark: wipes when seen, again on hover ============ */
+  (function(){
+    var mark = document.getElementById("sw-mark");
+    if (!mark) return;
+    if (reduce) return;              /* stays finished, nothing to replay */
+    mark.classList.add("sw-armed");  /* only now is it safe to clip it away */
+
+    var RUN_MS = 1600, playing = false, t = null;
+    function play(){
+      if (playing) return;
+      playing = true;
+      mark.classList.remove("sw-play");
+      void mark.offsetWidth;         /* reflow, or the delayed half never replays */
+      mark.classList.add("sw-play");
+      clearTimeout(t);
+      t = setTimeout(function(){ playing = false; }, RUN_MS);
+    }
+
+    onceWellInView(mark, play, 0.72);
+
+    /* hover, not click: the row is a link to sellwant.com */
+    if (matchMedia("(pointer:fine)").matches){
+      mark.addEventListener("pointerenter", function(e){
+        if (e.pointerType === "touch") return;
+        play();
+      });
+    }
+    var head = mark.closest(".row-head");
+    if (head) head.addEventListener("focus", play);
+  })();
+
+  /* ===================== SellWant: the two sides meeting ===================== */
+  (function(){
+    var wrap = document.getElementById("swap");
+    if (!wrap) return;
+    var out = document.getElementById("swap-out");
+    var btn = document.getElementById("swap-btn");
+    var timer = null;
+
+    function lock(){
+      wrap.classList.add("locked");
+      out.textContent = "Locked in \u00b7 Oct 3";
+    }
+    function play(){
+      clearTimeout(timer);
+      wrap.classList.remove("locked");
+      out.textContent = "";
+      if (reduce){ lock(); return; }
+      timer = setTimeout(lock, 620);
+    }
+
+    btn.addEventListener("click", play);
+    onceWellInView(wrap, play, 0.82);
+  })();
+
+  /* ===================== wa-slack: one message, both tools ===================== */
+  (function(){
+    var wrap = document.getElementById("relay");
+    if (!wrap) return;
+    var wa = document.getElementById("relay-wa");
+    var sl = document.getElementById("relay-sl");
+    var btn = document.getElementById("relay-btn");
+
+    /* pane, who, text, extra class. The same ticket seen from both ends: the
+       customer only ever sees WhatsApp, the agent only ever sees Slack. */
+    var SCRIPT = [
+      { at:"wa", who:"Cliente",  text:"Hola, no me lleg\u00f3 la factura de marzo" },
+      { at:"sl", who:"#soporte", text:"Nuevo ticket \u00b7 +54 9 11 \u2026 4417", cls:"tag" },
+      { at:"sl", who:"Cliente",  text:"Hola, no me lleg\u00f3 la factura de marzo", cls:"them" },
+      { at:"sl", who:"Agente",   text:"Te la reenv\u00edo ahora mismo" },
+      { at:"wa", who:"Soporte",  text:"Te la reenv\u00edo ahora mismo", cls:"them" },
+      { at:"sl", who:"#soporte", text:"Cerrado", cls:"tag" }
+    ];
+
+    var timers = [];
+    function clear(){
+      timers.forEach(clearTimeout); timers = [];
+      wa.textContent = ""; sl.textContent = "";
+    }
+    function add(step){
+      var el = document.createElement("div");
+      el.className = "relay-msg" + (step.cls ? " " + step.cls : "");
+      var who = document.createElement("span");
+      who.className = "who"; who.textContent = step.who;
+      el.appendChild(who);
+      el.appendChild(document.createTextNode(step.text));
+      (step.at === "wa" ? wa : sl).appendChild(el);
+    }
+    function play(){
+      clear();
+      if (reduce){ SCRIPT.forEach(add); return; }
+      SCRIPT.forEach(function(step, i){
+        timers.push(setTimeout(function(){ add(step); }, 90 + i * 620));
+      });
+    }
+
+    btn.addEventListener("click", play);
+    onceWellInView(wrap, play, 0.82);
+  })();
+
+  /* ===================== Texarg: a workflow that actually runs ===================== */
+  (function(){
+    var fsvg = document.getElementById("flow-svg");
+    if (!fsvg) return;
+    var STOPS = [
+      { x:26,  label:"Lead in" },
+      { x:112, label:"Routed" },
+      { x:198, label:"Reminder" },
+      { x:278, label:"Invoiced" }
+    ];
+    var Y = 18;
+
+    /* same wobbled hairline as everything else on the page */
+    var pts = [];
+    for (var x = STOPS[0].x; x <= STOPS[STOPS.length-1].x; x += 4){
+      pts.push({ x:x, y: Y + Math.sin(x*0.09)*0.9 + Math.sin(x*0.31)*0.4 });
+    }
+    var wirePath = document.createElementNS(NS, "path");
+    wirePath.setAttribute("class", "wire2");
+    wirePath.setAttribute("d", pts.map(function(p,i){
+      return (i?"L":"M") + p.x.toFixed(1) + " " + p.y.toFixed(1);
+    }).join(""));
+    fsvg.appendChild(wirePath);
+
+    function yAt(x){ return Y + Math.sin(x*0.09)*0.9 + Math.sin(x*0.31)*0.4; }
+
+    var stopEls = STOPS.map(function(s){
+      var c = document.createElementNS(NS, "circle");
+      c.setAttribute("class","stop"); c.setAttribute("cx", s.x);
+      c.setAttribute("cy", yAt(s.x).toFixed(1)); c.setAttribute("r", 4);
+      fsvg.appendChild(c);
+      var t = document.createElementNS(NS, "text");
+      t.setAttribute("class","cap"); t.setAttribute("x", s.x);
+      t.setAttribute("y", 38); t.setAttribute("text-anchor","middle");
+      t.textContent = s.label.toUpperCase();
+      fsvg.appendChild(t);
+      return { c:c, t:t };
+    });
+    var pip = document.createElementNS(NS, "circle");
+    pip.setAttribute("class","pip"); pip.setAttribute("r", 3);
+    pip.setAttribute("opacity", 0);
+    fsvg.appendChild(pip);
+
+    var x0 = STOPS[0].x, x1 = STOPS[STOPS.length-1].x;
+    var t = 0, active = false, played = false, rafOn = false, prevT = null;
+
+    function loop(ts){
+      var dt = prevT === null ? 16 : Math.min(48, ts - prevT);
+      prevT = ts;
+      t = Math.min(1, t + dt/1900);
+      var e = t < .5 ? 2*t*t : 1 - Math.pow(-2*t+2, 2)/2;
+      var x = x0 + (x1-x0)*e;
+      pip.setAttribute("opacity", 1);
+      pip.setAttribute("cx", x.toFixed(1));
+      pip.setAttribute("cy", (yAt(x) - 0.5).toFixed(1));
+      stopEls.forEach(function(s, i){
+        var hot = x >= STOPS[i].x - 3;
+        s.c.classList.toggle("hot", hot);
+        s.t.classList.toggle("hot", hot);
+      });
+      if (t >= 1){
+        /* runs once and stops, leaving the whole chain lit, the finished state
+           is the point, and a looping diagram just becomes wallpaper */
+        active = false; rafOn = false;
+        pip.setAttribute("opacity", 0);
+        return;
+      }
+      requestAnimationFrame(loop);
+    }
+    function run(){
+      t = 0; active = true;
+      stopEls.forEach(function(s){ s.c.classList.remove("hot"); s.t.classList.remove("hot"); });
+      if (!rafOn){ rafOn = true; prevT = null; requestAnimationFrame(loop); }
+    }
+
+    /* fires the first time it is properly in view, then never again on its own */
+    if (!reduce) onceWellInView(fsvg, function(){ played = true; run(); }, 0.8);
+
+    if (reduce){
+      stopEls.forEach(function(s){ s.c.classList.add("hot"); s.t.classList.add("hot"); });
+    }
+    var fbtn = document.getElementById("flow-btn");
+    if (fbtn) fbtn.addEventListener("click", function(){ played = true; run(); });
+  })();
+
+  /* ===================== copy email ===================== */
+  var copyBtn = document.getElementById("copy-mail");
+  if (copyBtn) copyBtn.addEventListener("click", function(e){
+    e.preventDefault(); e.stopPropagation();
+    var addr = "lucas@botbol.us";
+    var done = function(){
+      copyBtn.textContent = "Copied";
+      copyBtn.classList.add("done");
+      setTimeout(function(){ copyBtn.textContent = "Copy"; copyBtn.classList.remove("done"); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(addr).then(done, function(){ copyBtn.textContent = "Select it"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = addr; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch(err){ copyBtn.textContent = "Select it"; }
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
